@@ -2444,7 +2444,7 @@ p {
 }
 
 #topnav.nav-sticky .navigation-menu.nav-light > li > a {
-  color: #ffffff;
+  color: #303030;
 }
 
 #topnav.nav-sticky .navigation-menu.nav-light > li:hover > .menu-arrow {
@@ -2485,7 +2485,6 @@ p {
     margin-left: -35px;
     -webkit-box-shadow: 1px 1px 0px 0px rgba(22, 28, 45, 0.15);
             box-shadow: 1px 1px 0px 0px rgba(22, 28, 45, 0.15);
-    border-color: transparent #ffffff #ffffff transparent;
   }
   #topnav .navigation-menu > li .submenu {
     position: absolute;
@@ -2513,7 +2512,7 @@ p {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 7px solid #495057;
-    border-color: transparent transparent #ffffff #ffffff;
+    border-color: transparent transparent #303030 #303030;
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
     -webkit-transform: rotate(135deg);
@@ -2613,6 +2612,7 @@ p {
   #topnav.scroll {
     top: 0;
   }
+
   #topnav.scroll .navigation-menu > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
