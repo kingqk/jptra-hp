@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Incrave - Responsive Landing Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Responsive Multipurpose Creative Landing Page Template" />
+        <meta name="keywords" content="Bootstrap 5, SASS, Clean, Multipurpose, Responsive, Modern" />
+        <meta content="Shreethemes" name="author" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Tobii -->
+        <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Slider -->               
+        <link rel="stylesheet" href="css/tiny-slider.css"/> 
+        <!-- Main Css -->
+        <!-- Custom Css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    </head>
+
+    <body>
+
+        <!-- TAGLINE START-->
+        <div class="tagline">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between">
+                            <ul class="list-unstyled mb-0 px-0 tag-social">
+                                <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i data-feather="facebook" class="fea icon-sm"></i></a></li>
+                                <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                                <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i data-feather="instagram" class="fea icon-sm"></i></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark"><i data-feather="twitter" class="fea icon-sm"></i></a></li>
+                            </ul>
+                            
+                            <ul class="list-unstyled mb-0 px-0 tag-right">
+                                <li class="list-inline-item me-2">
+                                    <div class="mb-0">
+                                        <select class="form-select form-select-sm select-lang">
+                                            
+                                            <option value="4">English</option>
+                                            <option value="1">Spanish</option>
+                                            <option value="3">French</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i data-feather="settings" class="fea icon-sm"></i></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#LoginForm" class="text-dark"><i data-feather="user" class="fea icon-sm"></i></a></li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end tagline-->
+        <!-- TAGLINE END-->
+
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky taglines">
+            <div class="container">
+                <!-- Logo container-->
+                <div>
+                    <a class="logo" href="#">
+                        <img src="images/logo-dark.png" height="21" alt="">
+                    </a>
+                </div> 
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Overview</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Landing</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="index-social-marketing.html" class="sub-menu-item">Social Media</a></li>
+                                <li><a href="index-online-learning.html" class="sub-menu-item">Online Course</a></li>
+                                <li><a href="index-coworking.html" class="sub-menu-item">Co-Working Space</a></li>
+                                <li><a href="index-digital-marketing.html" class="sub-menu-item">Digital Marketing</a></li>
+                                <li><a href="index-job.html" class="sub-menu-item">Job & Careers</a></li>
+                                <li><a href="index-travel.html" class="sub-menu-item">Travel Agency</a></li>
+                                <li><a href="index-charity.html" class="sub-menu-item">Charity & Helping Hands</a></li>
+                                <li><a href="index-cloud-hosting.html" class="sub-menu-item">Cloud Hosting</a></li>
+                                <li><a href="index-minimal-portfolio.html" class="sub-menu-item">Minimal Portfolio</a></li>
+                                <li><a href="index-startup-business.html" class="sub-menu-item">Startup Business</a></li>
+                            </ul>
+                        </li>
+        
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="page-about.html" class="sub-menu-item"> About Us</a></li>
+                                <li><a href="page-services.html" class="sub-menu-item">Services</a></li>
+                                <li><a href="page-pricing.html" class="sub-menu-item">Pricing</a></li>
+                                <li><a href="page-team.html" class="sub-menu-item"> Team</a></li>
+                                <li><a href="page-faq.html" class="sub-menu-item"> F.A.Q</a></li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Careers</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="page-job-grid.html" class="sub-menu-item">Job Grid</a></li>
+                                        <li><a href="page-job-listing.html" class="sub-menu-item">Job Listing</a></li>
+                                        <li><a href="page-job-detail.html" class="sub-menu-item">Job Details</a></li>
+                                        <li><a href="page-job-apply.html" class="sub-menu-item">Job Apply Form</a></li>
+                                        <li><a href="page-job-company.html" class="sub-menu-item">Company Details</a></li>
+                                        <li><a href="page-job-candidate.html" class="sub-menu-item">Candidate Details</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> User</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="page-login.html" class="sub-menu-item">Login</a></li>
+                                        <li><a href="page-signup.html" class="sub-menu-item">Sign Up</a></li>
+                                        <li><a href="page-reset-password.html" class="sub-menu-item">Forgot Password</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Special</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="page-comingsoon.html" class="sub-menu-item">Coming Soon</a></li>
+                                        <li><a href="page-maintenance.html" class="sub-menu-item">Maintenance</a></li>
+                                        <li><a href="page-404.html" class="sub-menu-item">404 Error</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Contact</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="contact-simple.html" class="sub-menu-item">Simple</a></li>
+                                        <li><a href="contact-creative.html" class="sub-menu-item">Creative</a></li>
+                                    </ul>  
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Work Gird</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="page-work-grid.html" class="sub-menu-item">Grid Boxed</a></li>
+                                        <li><a href="page-work-grid-full.html" class="sub-menu-item">Grid Full</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Work Classic</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="page-work-classic.html" class="sub-menu-item">Classic Boxed</a></li>
+                                        <li><a href="page-work-classic-full.html" class="sub-menu-item">Classic Full</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Work Modern</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="page-work-modern.html" class="sub-menu-item">Modern Boxed</a></li>
+                                        <li><a href="page-work-modern-full.html" class="sub-menu-item">Modern Full</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Work Masonry</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="page-work-masonry.html" class="sub-menu-item">Masonry Boxed</a></li>
+                                        <li><a href="page-work-masonry-full.html" class="sub-menu-item">Masonry Full</a></li>
+                                    </ul>  
+                                </li>
+                                <li><a href="page-work-details.html" class="sub-menu-item">Work Details</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Blogs</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="page-blog.html" class="sub-menu-item">Blogs</a></li>
+                                <li><a href="page-blog-sidebar.html" class="sub-menu-item">Blog & Sidebar</a></li>
+                                <li><a href="page-blog-detail.html" class="sub-menu-item">Blog Details One</a></li>
+                                <li><a href="page-blog-detail2.html" class="sub-menu-item">Blog Details Two</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="components.html" class="sub-menu-item">Components</a></li>
+                    </ul><!--end navigation menu-->
+                    
+                    <ul class="list-unstyled small-tagline d-none mb-0">
+                        <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i data-feather="settings" class="fea icon-sm"></i></a></li>
+                        <li class="list-inline-item me-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#LoginForm" class="text-dark"><i data-feather="user" class="fea icon-sm"></i></a></li>
+                        <li class="list-inline-item me-2">
+                            <div class="mb-0">
+                                <select class="form-select form-select-sm select-lang">
+                                    <option value="4">English</option>
+                                    <option value="1">Spanish</option>
+                                    <option value="3">French</option>
+                                </select>
+                            </div>
+                        </li>
+
+                        <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i data-feather="facebook" class="fea icon-sm"></i></a></li>
+                        <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                        <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i data-feather="instagram" class="fea icon-sm"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark"><i data-feather="twitter" class="fea icon-sm"></i></a></li>
+                    </ul><!--end login button-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <section class="bg-half-260 bg-light d-table w-100">
+            <div class="container">
+                <div class="row mt-5 pt-3">
+                    <div class="col-lg-12">
+                        <div class="title-heading">
+                            <h2 class="heading mb-4">Passionate Designer Born in USA <br> Who Loves Portfolio.</h2>
+                            <p class="text-muted para-desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <div class="watch-video mt-4">
+                                <a href="javascript:void(0)" class="btn btn-pills btn-outline-primary mb-2">Started Now <i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                                <a href="#" class="video-play-icon watch text-dark mb-2 ms-2"><i class="mdi mdi-play play-icon-circle text-center d-inline-block me-2 rounded-pill text-white position-relative play play-iconbar"></i> Watch now !</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Image Start -->
+        <section class="bg-half-260" style="background: url('images/work/bg.jpg') center center;"></section><!--end section-->
+        <!-- Image End -->
+
+        <!-- Start -->
+        <section class="py-4 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col text-center py-4">
+                        <a href="javascript:void(0)">
+                            <div class="explore-feature px-3 py-5 text-center rounded-md">
+                                <i data-feather="pen-tool" class="fea text-primary"></i>
+                                <h6 class="text-muted mt-3 mb-0">Designing</h6>
+                            </div>
+                        </a>
+                    </div><!--end col-->
+
+                    <div class="col text-center py-4">
+                        <a href="javascript:void(0)">
+                            <div class="explore-feature px-3 py-5 text-center rounded-md">
+                                <i data-feather="monitor" class="fea text-primary"></i>
+                                <h6 class="text-muted mt-3 mb-0">Development</h6>
+                            </div>
+                        </a>
+                    </div><!--end col-->
+
+                    <div class="col text-center py-4">
+                        <a href="javascript:void(0)">
+                            <div class="explore-feature px-3 py-5 text-center rounded-md bg-white">
+                                <i data-feather="figma" class="fea text-primary"></i>
+                                <h6 class="text-muted mt-3 mb-0">Figma</h6>
+                            </div>
+                        </a>
+                    </div><!--end col-->
+
+                    <div class="col text-center py-4">
+                        <a href="javascript:void(0)">
+                            <div class="explore-feature px-3 py-5 text-center rounded-md">
+                                <i data-feather="camera" class="fea text-primary"></i>
+                                <h6 class="text-muted mt-3 mb-0">Photography</h6>
+                            </div>
+                        </a>
+                    </div><!--end col-->
+
+                    <div class="col text-center py-4">
+                        <a href="javascript:void(0)">
+                            <div class="explore-feature px-3 py-5 text-center rounded-md">
+                                <i data-feather="tool" class="fea text-primary"></i>
+                                <h6 class="text-muted mt-3 mb-0">Testing</h6>
+                            </div>
+                        </a>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Work Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h6 class="text-primary">Portfolio</h6>
+                            <h4 class="title mb-4">Our Project Showcase</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-12 filters-group-wrap text-center">
+                        <div class="filters-group">
+                            <ul class="container-filter mb-0 categories-filter list-unstyled filter-options">
+                                <li class="list-inline-item categories h6 position-relative text-dark active" data-group="all">All</li>
+                                <li class="list-inline-item categories h6 position-relative text-dark" data-group="branding">Branding</li>
+                                <li class="list-inline-item categories h6 position-relative text-dark" data-group="designing">Designing</li>
+                                <li class="list-inline-item categories h6 position-relative text-dark" data-group="photography">Photography</li>
+                                <li class="list-inline-item categories h6 position-relative text-dark" data-group="development">Development</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div id="grid" class="row">
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/1.jpg" title="">
+                                <img src="images/work/1.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Iphone mockup</a></h5>
+                                <h6 class="text-muted tag mb-0">Branding</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                                        
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["designing"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/2.jpg" title="">
+                                <img src="images/work/2.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Mockup Collection</a></h5>
+                                <h6 class="text-muted tag mb-0">Mockup</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["photography"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/3.jpg" title="">
+                                <img src="images/work/3.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Abstract images</a></h5>
+                                <h6 class="text-muted tag mb-0">Abstract</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["development"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/4.jpg" title="">
+                                <img src="images/work/4.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Yellow bg with Books</a></h5>
+                                <h6 class="text-muted tag mb-0">Books</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/5.jpg" title="">
+                                <img src="images/work/5.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Company V-card</a></h5>
+                                <h6 class="text-muted tag mb-0">V-card</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["designing"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/6.jpg" title="">
+                                <img src="images/work/6.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Mockup box with paints</a></h5>
+                                <h6 class="text-muted tag mb-0">Photography</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["designing"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/7.jpg" title="">
+                                <img src="images/work/7.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Coffee cup</a></h5>
+                                <h6 class="text-muted tag mb-0">Cups</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["development"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/8.jpg" title="">
+                                <img src="images/work/8.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Pen and article</a></h5>
+                                <h6 class="text-muted tag mb-0">Article</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["photography"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/9.jpg" title="">
+                                <img src="images/work/9.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">White mockup box</a></h5>
+                                <h6 class="text-muted tag mb-0">Color</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["photography"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/10.jpg" title="">
+                                <img src="images/work/10.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Logo Vectors</a></h5>
+                                <h6 class="text-muted tag mb-0">Logos</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/11.jpg" title="">
+                                <img src="images/work/11.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Black and white T-shirt</a></h5>
+                                <h6 class="text-muted tag mb-0">Clothes</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]'>
+                        <div class="work-container work-grid position-relative d-block overflow-hidden rounded">
+                            <a class="lightbox d-inline-block" href="images/work/12.jpg" title="">
+                            <img src="images/work/12.jpg" class="img-fluid" alt="work-image">
+                            </a>
+                            <div class="content bg-white p-3">
+                                <h5 class="mb-0"><a href="page-work-details.html" class="text-dark title">Yellow bg with cellphone</a></h5>
+                                <h6 class="text-muted tag mb-0">Cellphone</h6>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="text-center">
+                            <a href="page-work-grid.html" class="btn btn-pills btn-primary">See More Work <i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                        </div>
+                    </div><!--end col-->
+                </div>
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12">
+                        <div class="section-title">
+                            <h4 class="title mb-4">Check what's our client <br> say about us !</h4>
+                            <p class="text-muted">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            
+                            <div class="tiny-single-item">                            
+                                <div class="tiny-slide">
+                                    <div class="single-review">
+                                        <blockquote class="blockquote position-relative py-4 pe-5 mb-0">
+                                            <p class="text-muted mb-0 fst-italic">" There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words which don't look even slightly believable. "</p>
+                                        </blockquote>                                    
+                                        <div class="reviewer mt-3 d-flex align-items-center">
+                                            <img src="images/client/01.jpg" class="img-fluid avatar avatar-md-sm rounded-pillhadow" alt="">
+                                            <div class="ms-2">
+                                                <h6 class="mb-0">Martin Sobhe</h6>
+                                                <p class="text-muted mb-0">Infosys</p>
+                                            </div>
+                                        </div>
+                                    </div><!--end single review-->
+                                </div>
+                                
+                                <div class="tiny-slide">
+                                    <div class="single-review">
+                                        <blockquote class="blockquote position-relative p-4 mb-0">
+                                            <p class="text-muted mb-0 fst-italic">" There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words which don't look even slightly believable. "</p>
+                                        </blockquote>
+                                        <div class="reviewer mt-3 d-flex align-items-center">
+                                            <img src="images/client/02.jpg" class="img-fluid avatar avatar-md-sm rounded-pillhadow" alt="">
+                                            <div class="ms-2">
+                                                <h6 class="mb-0">Bobby DE</h6>
+                                                <p class="text-muted mb-0">Vivo</p>
+                                            </div>
+                                        </div>
+                                    </div><!--end single review-->
+                                </div>
+                                
+                                <div class="tiny-slide">
+                                    <div class="single-review">
+                                        <blockquote class="blockquote position-relative p-4 mb-0">
+                                            <p class="text-muted mb-0 fst-italic">" There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words which don't look even slightly believable. "</p>
+                                        </blockquote>
+                                        <div class="reviewer mt-3 d-flex align-items-center">
+                                            <img src="images/client/03.jpg" class="img-fluid avatar avatar-md-sm rounded-pillhadow" alt="">
+                                            <div class="ms-2">
+                                                <h6 class="mb-0">Sunny Longd</h6>
+                                                <p class="text-muted mb-0">Apple</p>
+                                            </div>
+                                        </div>
+                                    </div><!--end single review-->
+                                </div>
+                                
+                                <div class="tiny-slide">
+                                    <div class="single-review">
+                                        <blockquote class="blockquote position-relative p-4 mb-0">
+                                            <p class="text-muted mb-0 fst-italic">" There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words which don't look even slightly believable. "</p>
+                                        </blockquote>
+                                        <div class="reviewer mt-3 d-flex align-items-center">
+                                            <img src="images/client/04.jpg" class="img-fluid avatar avatar-md-sm rounded-pillhadow" alt="">
+                                            <div class="ms-2">
+                                                <h6 class="mb-0">Joya Aafri</h6>
+                                                <p class="text-muted mb-0">Oppo</p>
+                                            </div>
+                                        </div>
+                                    </div><!--end single review-->
+                                </div>
+    
+                                <div class="tiny-slide">
+                                    <div class="single-review">
+                                        <blockquote class="blockquote position-relative p-4 mb-0">
+                                            <p class="text-muted mb-0 fst-italic">" There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words which don't look even slightly believable. "</p>
+                                        </blockquote>
+                                        <div class="reviewer mt-3 d-flex align-items-center">
+                                            <img src="images/client/05.jpg" class="img-fluid avatar avatar-md-sm rounded-pillhadow" alt="">
+                                            <div class="ms-2">
+                                                <h6 class="mb-0">Lisa Marvel</h6>
+                                                <p class="text-muted mb-0">Infinix</p>
+                                            </div>
+                                        </div>
+                                    </div><!--end single review-->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-5 offset-lg-1 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="position-relative">
+                            <img src="images/work/16.jpg" class="rounded-md img-fluid shadow mx-auto d-block" alt="">
+                            <div class="play-icon">
+                                <a href="#" class="play-btn video-play-icon">
+                                    <i class="mdi mdi-play mdi-24px text-primary rounded-pill bg-primary shadow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">I Am Available For Freelancing Projects.</h4>
+                            <p class="text-muted mx-auto mb-0 para-desc">Obviously I'M Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                            <div class="mt-4">
+                                <a href="javascript:void(0)" class="btn btn-pills btn-primary">Hire me <i data-feather="chevron-right" class="fea icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Work End -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a class="logo-footer" href="#">
+                            <img src="images/logo-light.png" height="21" alt="">
+                        </a>
+                        <p class="mt-4">Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head font-weight-normal">Landing</h5>
+                        <ul class="list-unstyled footer-list px-0 mt-4">
+                            <li><a href="index-coworking.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Co-working</a></li>
+                            <li><a href="index-job" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Job & Careers</a></li>
+                            <li><a href="index-startup-business.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Startups</a></li>
+                            <li><a href="index-cloud-hosting.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Hosting</a></li>
+                            <li><a href="index-charity.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Charity</a></li>
+                            <li><a href="index-social-marketing.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Social Media</a></li>
+                            <li><a href="index-minimal-portfolio.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Portfolio</a></li>
+                            <li><a href="index-digital-marketing.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Digital Marketing</a></li>
+                            <li><a href="index-online-learning.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Online Courses</a></li>
+                            <li><a href="index-travel.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Travel</a></li>
+                        </ul>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head font-weight-normal">About</h5>
+                        <ul class="list-unstyled footer-list px-0 mt-4">
+                            <li><a href="page-about.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> About us</a></li>
+                            <li><a href="page-services.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Features</a></li>
+                            <li><a href="page-pricing.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Pricing</a></li>
+                            <li><a href="page-team.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Team</a></li>
+                            <li><a href="page-blog.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Blog & News</a></li>
+                            <li><a href="page-login.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Login</a></li>
+                            <li><a href="page-signup.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Sign Up</a></li>
+                        </ul>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head font-weight-normal">Office</h5>
+                        <ul class="list-unstyled footer-list px-0 mt-4">
+                            <li><i data-feather="map-pin" class="fea icon-sm me-2"></i><a href="#" class="text-foot">Londan, England</a></li>
+                            <li><i data-feather="mail" class="fea icon-sm me-2"></i><a href="mailto:contact@example.com" class="text-foot">test@yourdomain.com</a></li>
+                            <li><i data-feather="phone" class="fea icon-sm me-2"></i><a href="tel:+152534-468-854" class="text-foot">+(125) 1254-5487</a></li>
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Incrave. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="http://www.shreethemes.in" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end social-icon social mb-0">
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Modal Content Start -->
+        <div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content rounded shadow border-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Login </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="login-form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" name="email" required="" placeholder="Your Email :">
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Password <span class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" required="" placeholder="Password :">
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="mb-3 d-inline-block">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                                            </div>
+                                        </div>
+                                        <p class="forgot-pass mb-0"><a href="page-reset-password.html" class="text-dark fw-bold">Forgot password ?</a></p>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-12 mb-0">
+                                    <button class="btn btn-primary w-100">Sign in</button>
+                                </div><!--end col-->
+                                <div class="col-12 mt-4 text-center">
+                                    <h6 class="mb-0">Or Login With</h6>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-4">
+                                            <a href="#" class="btn w-100 btn-light bg-facebook"><i class="mdi mdi-facebook"></i> Facebook</a>
+                                        </div>
+                                        <div class="col-sm-6 mt-4">
+                                            <a href="#" class="btn w-100 btn-light"><i class="mdi mdi-google"></i> Google</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a href="page-signup.html" class="text-dark fw-bold">Sign Up</a></p>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </form><!--end form-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Content End -->
+
+        <!-- Back to top -->
+        <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+            <i class="mdi mdi-chevron-up d-block"></i>
+        </a>
+        <!-- Back to top -->
+
+        
+
+        <!-- Javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Shuffle Popup -->
+        <script src="js/shuffle.min.js"></script> 
+        <script src="js/tobii.min.js"></script> 
+        <script src="js/gallery.init.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <script src="js/tiny-slider-init.js "></script>
+        <!-- Feather icon -->
+        <script src="js/feather.min.js"></script>
+        <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
+        
+        <!-- Main Js -->
+        <script src="js/app.js"></script>
+
+        <script>
+            const tobii = new Tobii()
+        </script>
+    </body>
+
+</html>

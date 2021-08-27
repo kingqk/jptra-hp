@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jp-tra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Multipurpose Creative Landing Page Template" />
+    <meta name="keywords" content="Bootstrap 5, SASS, Clean, Multipurpose, Responsive, Modern" />
+    <meta content="Shreethemes" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <!-- Tobii -->
+    <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+    <!-- Swiper -->
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Main Css -->
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+
+    <!-- TAGLINE START-->
+    <div class="tagline">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <ul class="list-unstyled mb-0 px-0 tag-social">
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="facebook" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="instagram" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="twitter" class="fea icon-sm"></i></a></li>
+                        </ul>
+
+                        <ul class="list-unstyled mb-0 px-0 tag-right">
+                            <li class="list-inline-item me-2">
+                                <div class="form-group mb-0">
+                                    <select class="form-select form-select-sm select-lang">
+                                        <option value="4">English</option>
+                                        <option value="1">Spanish</option>
+                                        <option value="3">French</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="settings" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" data-bs-toggle="modal"
+                                    data-bs-target="#LoginForm" class="text-dark"><i data-feather="user"
+                                        class="fea icon-sm"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </div>
+    <!--end tagline-->
+    <!-- TAGLINE END-->
+
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky taglines">
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a class="logo" href="#">
+                    <img src="images/logo-dark.png" class="l-dark" height="21" alt="">
+                    <img src="images/logo-light.png" class="l-light" height="21" alt="">
+                </a>
+            </div>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu nav-light">
+                    <li><a href="index.html" class="sub-menu-item">Top</a></li>
+                    <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">私たちの考え</a><span
+                            class="menu-arrow"></span></li>
+
+                    <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">企業情報</a><span
+                            class="menu-arrow"></span></li>
+
+                    <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">事業内容</a><span
+                            class="menu-arrow"></span></li>
+
+                    <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">チーム紹介</a><span
+                            class="menu-arrow"></span></li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">案件事例</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="page-blog.html" class="sub-menu-item">事例①</a></li>
+                            <li><a href="page-blog-sidebar.html" class="sub-menu-item">事例②</a></li>
+                            <li><a href="page-blog-detail.html" class="sub-menu-item">事例③</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="components.html" class="sub-menu-item">お問い合わせ</a></li>
+                </ul>
+                <!--end navigation menu-->
+
+                <ul class="list-unstyled small-tagline d-none mb-0">
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="settings" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#LoginForm" class="text-dark"><i data-feather="user"
+                                class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2">
+                        <div class="form-group mb-0">
+                            <select class="form-select form-select-sm select-lang">
+                                <option value="4">日本語</option>
+                                <option value="1">English</option>
+                                <option value="3">中文</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="facebook" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="instagram" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="twitter" class="fea icon-sm"></i></a></li>
+                </ul>
+                <!--end login button-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="swiper-slider-hero position-relative d-block vh-100" id="home">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg016.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0">
+                                <div class="col-12">
+                                    <div class="title-heading">
+                                        <h1 class="heading text-white fw-bold mb-4">企業サービス ローコストで...</h1>
+                                        <p class="para-desc text-white-50">
+                                            私たちが皆少しずつ違うように、中小企業もそれぞれ個性があります。「成功したい」という執念がどの起業家も同じであるように、「売り上げを伸ばしたい」という思いはどの中小企業も同じです。
+                                        </p>
+
+                                        <div class="mt-4">
+                                            <a href="javascript:void(0)" class="btn btn-primary">詳細はコチラ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg012.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0 justify-content-center">
+                                <div class="col-12">
+                                    <div class="title-heading text-center">
+                                        <h1 class="heading text-white fw-bold mb-4">テーマ・ホール 体験型展示販売館</h1>
+                                        <p class="para-desc mx-auto text-white-50">テーマ・ホールの開発コンセプトは「体験型販売店」とし、
+                                            楽しさ、遊び、くつろぎ、そして驚きや感動を体感出来る施設で、
+                                            商品を触れてもらう以上の様々な深い体験を提供することで
+                                            製造企業の総合ブランド力を際立たせ、日本の新たな注目観光・体験スポットを作り、
+                                            ファン化を狙っていくことを目指します。</p>
+
+                                        <div class="watch-video mt-4">
+                                            <a href="#" class="video-play-icon watch text-light mb-2 ms-2"><i
+                                                    class="mdi mdi-play play-icon-circle text-center d-inline-block me-2 rounded-pill text-white position-relative play play-iconbar"></i>
+                                                Watch now !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg019.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0">
+                                <div class="col-12">
+                                    <div class="title-heading">
+                                        <h1 class="heading text-white fw-bold mb-4">オンライン無在庫販売<br>中小企業・個人事業主</h1>
+                                        <p class="para-desc text-white-50">
+                                            「無在庫販売」とはネットショップ運営者が商品の仕入れや在庫管理せずにショップの運営を行うことが出来るビジネスモデルです。</p>
+
+                                        <div class="mt-2">
+                                            <a href="javascript:void(0)" class="btn btn-outline-primary mt-2">詳細はコチラ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg08.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0">
+                                <div class="col-12">
+                                    <div class="title-heading">
+                                        <h1 class="heading text-white fw-bold mb-4">企業サービス ローコストで...</h1>
+                                        <p class="para-desc text-white-50">
+                                            私たちが皆少しずつ違うように、中小企業もそれぞれ個性があります。「成功したい」という執念がどの起業家も同じであるように、「売り上げを伸ばしたい」という思いはどの中小企業も同じです。
+                                        </p>
+
+                                        <div class="mt-4">
+                                            <a href="javascript:void(0)" class="btn btn-primary">詳細はコチラ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg011.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0 justify-content-center">
+                                <div class="col-12">
+                                    <div class="title-heading text-center">
+                                        <h1 class="heading text-white fw-bold mb-4">テーマ・ホール 体験型展示販売館</h1>
+                                        <p class="para-desc mx-auto text-white-50">テーマ・ホールの開発コンセプトは「体験型販売店」とし、
+                                            楽しさ、遊び、くつろぎ、そして驚きや感動を体感出来る施設で、
+                                            商品を触れてもらう以上の様々な深い体験を提供することで
+                                            製造企業の総合ブランド力を際立たせ、日本の新たな注目観光・体験スポットを作り、
+                                            ファン化を狙っていくことを目指します。</p>
+
+                                        <div class="watch-video mt-4">
+                                            <a href="#" class="video-play-icon watch text-light mb-2 ms-2"><i
+                                                    class="mdi mdi-play play-icon-circle text-center d-inline-block me-2 rounded-pill text-white position-relative play play-iconbar"></i>
+                                                Watch now !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg11.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0">
+                                <div class="col-12">
+                                    <div class="title-heading">
+                                        <h1 class="heading text-white fw-bold mb-4">オンライン無在庫販売<br>中小企業・個人事業主</h1>
+                                        <p class="para-desc text-white-50">
+                                            「無在庫販売」とはネットショップ運営者が商品の仕入れや在庫管理せずにショップの運営を行うことが出来るビジネスモデルです。</p>
+
+                                        <div class="mt-2">
+                                            <a href="javascript:void(0)" class="btn btn-outline-primary mt-2">詳細はコチラ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg017.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0">
+                                <div class="col-12">
+                                    <div class="title-heading">
+                                        <h1 class="heading text-white fw-bold mb-4">企業サービス ローコストで...</h1>
+                                        <p class="para-desc text-white-50">
+                                            私たちが皆少しずつ違うように、中小企業もそれぞれ個性があります。「成功したい」という執念がどの起業家も同じであるように、「売り上げを伸ばしたい」という思いはどの中小企業も同じです。
+                                        </p>
+
+                                        <div class="mt-4">
+                                            <a href="javascript:void(0)" class="btn btn-primary">詳細はコチラ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg014.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0 justify-content-center">
+                                <div class="col-12">
+                                    <div class="title-heading text-center">
+                                        <h1 class="heading text-white fw-bold mb-4">テーマ・ホール 体験型展示販売館</h1>
+                                        <p class="para-desc mx-auto text-white-50">テーマ・ホールの開発コンセプトは「体験型販売店」とし、
+                                            楽しさ、遊び、くつろぎ、そして驚きや感動を体感出来る施設で、
+                                            商品を触れてもらう以上の様々な深い体験を提供することで
+                                            製造企業の総合ブランド力を際立たせ、日本の新たな注目観光・体験スポットを作り、
+                                            ファン化を狙っていくことを目指します。</p>
+
+                                        <div class="watch-video mt-4">
+                                            <a href="#" class="video-play-icon watch text-light mb-2 ms-2"><i
+                                                    class="mdi mdi-play play-icon-circle text-center d-inline-block me-2 rounded-pill text-white position-relative play play-iconbar"></i>
+                                                Watch now !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg018.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0">
+                                <div class="col-12">
+                                    <div class="title-heading">
+                                        <h1 class="heading text-white fw-bold mb-4">オンライン無在庫販売<br>中小企業・個人事業主</h1>
+                                        <p class="para-desc text-white-50">
+                                            「無在庫販売」とはネットショップ運営者が商品の仕入れや在庫管理せずにショップの運営を行うことが出来るビジネスモデルです。</p>
+
+                                        <div class="mt-2">
+                                            <a href="javascript:void(0)" class="btn btn-outline-primary mt-2">詳細はコチラ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg020.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0">
+                                <div class="col-12">
+                                    <div class="title-heading">
+                                        <h1 class="heading text-white fw-bold mb-4">企業サービス ローコストで...</h1>
+                                        <p class="para-desc text-white-50">
+                                            私たちが皆少しずつ違うように、中小企業もそれぞれ個性があります。「成功したい」という執念がどの起業家も同じであるように、「売り上げを伸ばしたい」という思いはどの中小企業も同じです。
+                                        </p>
+
+                                        <div class="mt-4">
+                                            <a href="javascript:void(0)" class="btn btn-primary">詳細はコチラ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg06.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0 justify-content-center">
+                                <div class="col-12">
+                                    <div class="title-heading text-center">
+                                        <h1 class="heading text-white fw-bold mb-4">テーマ・ホール 体験型展示販売館</h1>
+                                        <p class="para-desc mx-auto text-white-50">テーマ・ホールの開発コンセプトは「体験型販売店」とし、
+                                            楽しさ、遊び、くつろぎ、そして驚きや感動を体感出来る施設で、
+                                            商品を触れてもらう以上の様々な深い体験を提供することで
+                                            製造企業の総合ブランド力を際立たせ、日本の新たな注目観光・体験スポットを作り、
+                                            ファン化を狙っていくことを目指します。</p>
+
+                                        <div class="watch-video mt-4">
+                                            <a href="#" class="video-play-icon watch text-light mb-2 ms-2"><i
+                                                    class="mdi mdi-play play-icon-circle text-center d-inline-block me-2 rounded-pill text-white position-relative play play-iconbar"></i>
+                                                Watch now !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+
+                <div class="swiper-slide d-flex align-items-center overflow-hidden">
+                    <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+                        data-background="images/coworking/bg10.jpg">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row pt-md-5 mt-lg-0">
+                                <div class="col-12">
+                                    <div class="title-heading">
+                                        <h1 class="heading text-white fw-bold mb-4">オンライン無在庫販売<br>中小企業・個人事業主</h1>
+                                        <p class="para-desc text-white-50">
+                                            「無在庫販売」とはネットショップ運営者が商品の仕入れや在庫管理せずにショップの運営を行うことが出来るビジネスモデルです。</p>
+
+                                        <div class="mt-2">
+                                            <a href="javascript:void(0)" class="btn btn-outline-primary mt-2">詳細はコチラ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div><!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+            </div>
+            <!-- end swiper-wrapper -->
+
+            <!-- swipper controls -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next border rounded text-center"></div>
+            <div class="swiper-button-prev border rounded text-center"></div>
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Hero End -->
+
+    <!-- Start -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6 col-12 order-1 order-md-2">
+                    <img src="images/startup/about.jpg" class="rounded img-fluid shadow mx-auto d-block" alt="">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-7 col-md-6 col-12 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="section-title me-lg-5">
+                        <h4 class="title mb-4">Incrave Business Story</h4>
+                        <p class="text-muted">It is a long established fact that a reader will be distracted by the
+                            readable content of a page when looking at its layout.</p>
+                        <p class="text-muted">This is required when, for example, the final text is not yet available.
+                            Dummy text is also known as 'fill text'. It is said that song composers of the past used
+                            dummy texts as lyrics when writing melodies in order to have a 'ready-made' text to sing
+                            with the melody.</p>
+                        <ul class="list-unstyled feature-list text-muted px-0">
+                            <li><i class="mdi mdi-circle-medium text-primary me-1"></i>Digital Marketing Solutions for
+                                Tomorrow</li>
+                            <li><i class="mdi mdi-circle-medium text-primary me-1"></i>Our Talented &amp; Experienced
+                                Marketing Agency</li>
+                            <li><i class="mdi mdi-circle-medium text-primary me-1"></i>Create your own skin to match
+                                your brand</li>
+                        </ul>
+                        <div class="my-4">
+                            <a href="javascript:void(0)" class="btn btn-primary">See More <i
+                                    data-feather="chevron-right" class="fea icon-sm"></i></a>
+                        </div>
+
+                        <div class="d-inline-block">
+                            <div class="pt-4 d-flex align-items-center border-top">
+                                <i data-feather="help-circle" class="fea icon-md me-2 text-primary"></i>
+                                <div class="content">
+                                    <h6 class="mb-0">Have Question ? Get in touch!</h6>
+                                    <a href="javascript:void(0)" class="text-primary">Learn More <i
+                                            data-feather="chevron-right" class="fea icon-sm"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+
+
+        <div class="container mt-100 mt-60">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">What we offer ?</h4>
+                        <p class="text-muted para-desc mx-auto mb-0">It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature serve-one">
+                        <div class="icons bg-primary text-center rounded-pill float-start me-3">
+                            <i data-feather="layout" class="fea icon-ex-md text-white"></i>
+                        </div>
+                        <div class="content overflow-hidden d-block">
+                            <h5><a href="javascript:void(0)" class="text-dark title"> Perfect Design</a></h5>
+                            <p class="text-muted mb-0">This is required when, for example, the final text is not yet
+                                available. Dummy text is also known as 'fill text'.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature serve-one">
+                        <div class="icons bg-primary text-center rounded-pill float-start me-3">
+                            <i data-feather="monitor" class="fea icon-ex-md text-white"></i>
+                        </div>
+                        <div class="content overflow-hidden d-block">
+                            <h5><a href="javascript:void(0)" class="text-dark title"> Web Development</a></h5>
+                            <p class="text-muted mb-0">It seems that only fragments of the original text remain in the
+                                Lorem Ipsum texts used today.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature serve-one">
+                        <div class="icons bg-primary text-center rounded-pill float-start me-3">
+                            <i data-feather="aperture" class="fea icon-ex-md text-white"></i>
+                        </div>
+                        <div class="content overflow-hidden d-block">
+                            <h5><a href="javascript:void(0)" class="text-dark title"> Social Media</a></h5>
+                            <p class="text-muted mb-0">One may speculate that over the course of time certain letters
+                                were at various within the text.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 pt-lg-4">
+                    <div class="feature serve-one">
+                        <div class="icons bg-primary text-center rounded-pill float-start me-3">
+                            <i data-feather="smartphone" class="fea icon-ex-md text-white"></i>
+                        </div>
+                        <div class="content overflow-hidden d-block">
+                            <h5><a href="javascript:void(0)" class="text-dark title"> Fully Responsive</a></h5>
+                            <p class="text-muted mb-0">This might also explain why one can now find slightly different
+                                there are no issues to contend with.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 pt-lg-4">
+                    <div class="feature serve-one">
+                        <div class="icons bg-primary text-center rounded-pill float-start me-3">
+                            <i data-feather="pen-tool" class="fea icon-ex-md text-white"></i>
+                        </div>
+                        <div class="content overflow-hidden d-block">
+                            <h5><a href="javascript:void(0)" class="text-dark title"> Clean Code</a></h5>
+                            <p class="text-muted mb-0">Certain internet providers exploit the fact that fill be
+                                recognized by automatic - from meaningless.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 pt-lg-4">
+                    <div class="feature serve-one">
+                        <div class="icons bg-primary text-center rounded-pill float-start me-3">
+                            <i data-feather="message-circle" class="fea icon-ex-md text-white"></i>
+                        </div>
+                        <div class="content overflow-hidden d-block">
+                            <h5><a href="javascript:void(0)" class="text-dark title"> Public Relations</a></h5>
+                            <p class="text-muted mb-0">The spread of computers and layout thus made dummy text better
+                                known while in times several lines.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+
+        <div class="container-fluid mt-100 mt-60">
+            <div class="rounded-md p-4" style="background: url('images/coworking/bg08.jpg') center center;">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="cta-review bg-white shadow rounded-md p-4">
+                                    <div class="tiny-single-item">
+                                        <div class="tiny-slide">
+                                            <div class="single-review text-center">
+                                                <ul class="list-unstyled h6 text-warning">
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                </ul>
+                                                <p class="text-muted h6 review fst-italic font-weight-normal">" There is
+                                                    now an abundance of readable dummy texts. These are usually used
+                                                    when a text is required purely to fill a space. "</p>
+                                                <div class="reviewer mt-3">
+                                                    <img src="images/client/01.jpg"
+                                                        class="img-fluid avatar avatar-md-sm rounded-pill mx-auto shadow"
+                                                        alt="">
+                                                    <h6 class="mt-2 mb-0 text-dark">Martin Sobhe</h6>
+                                                    <p class="text-danger mb-0">Infosys</p>
+                                                </div>
+                                            </div>
+                                            <!--end single review-->
+                                        </div>
+
+                                        <div class="tiny-slide">
+                                            <div class="single-review text-center">
+                                                <ul class="list-unstyled h6 text-warning">
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                </ul>
+                                                <p class="text-muted h6 review fst-italic font-weight-normal">" These
+                                                    alternatives to the classic Lorem Ipsum texts are often amusing and
+                                                    tell short, funny or nonsensical stories accurately represent "</p>
+                                                <div class="reviewer mt-3">
+                                                    <img src="images/client/02.jpg"
+                                                        class="img-fluid avatar avatar-md-sm rounded-pill mx-auto shadow"
+                                                        alt="">
+                                                    <h6 class="mt-2 mb-0 text-dark">Bobby DE</h6>
+                                                    <p class="text-danger mb-0">Vivo</p>
+                                                </div>
+                                            </div>
+                                            <!--end single review-->
+                                        </div>
+
+                                        <div class="tiny-slide">
+                                            <div class="single-review text-center">
+                                                <ul class="list-unstyled h6 text-warning">
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                    <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                                </ul>
+                                                <p class="text-muted h6 review fst-italic font-weight-normal">"
+                                                    According to most sources, Lorum Ipsum can be traced back to a text
+                                                    composed by Cicero in 45 BC. Allegedly, a Latin scholar "</p>
+                                                <div class="reviewer mt-3">
+                                                    <img src="images/client/03.jpg"
+                                                        class="img-fluid avatar avatar-md-sm rounded-pill mx-auto shadow"
+                                                        alt="">
+                                                    <h6 class="mt-2 mb-0 text-dark">Sunny Longd</h6>
+                                                    <p class="text-danger mb-0">Apple</p>
+                                                </div>
+                                            </div>
+                                            <!--end single review-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end container-->
+                </div>
+                <!--end row-->
+            </div>
+            <!--end img-->
+        </div>
+        <!--end container fluid-->
+
+
+        <div class="container mt-100 mt-60">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">Our Services</h4>
+                        <p class="text-muted mb-0 para-desc mx-auto">It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature feature-transition text-center p-4 rounded">
+                        <div class="icon text-center rounded-pill">
+                            <i data-feather="wifi" class="fea icon-m-md feature-icon text-primary"></i>
+                        </div>
+                        <h5 class="mt-2">Free Internet</h5>
+                        <p class="text-muted mb-0">The most well-known dummy originated in the 16th century.</p>
+                    </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature feature-transition text-center p-4 rounded">
+                        <div class="icon text-center rounded-pill">
+                            <i data-feather="users" class="fea icon-m-md feature-icon text-primary"></i>
+                        </div>
+                        <h5 class="mt-2">Group Events</h5>
+                        <p class="text-muted mb-0">The most well-known dummy originated in the 16th century.</p>
+                    </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature feature-transition text-center p-4 rounded">
+                        <div class="icon text-center rounded-pill">
+                            <i data-feather="briefcase" class="fea icon-m-md feature-icon text-primary"></i>
+                        </div>
+                        <h5 class="mt-2">Meeting Room</h5>
+                        <p class="text-muted mb-0">The most well-known dummy originated in the 16th century.</p>
+                    </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature feature-transition text-center p-4 rounded">
+                        <div class="icon text-center rounded-pill">
+                            <i data-feather="monitor" class="fea icon-m-md feature-icon text-primary"></i>
+                        </div>
+                        <h5 class="mt-2">Free Public PC</h5>
+                        <p class="text-muted mb-0">The most well-known dummy originated in the 16th century.</p>
+                    </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature feature-transition text-center p-4 rounded">
+                        <div class="icon text-center rounded-pill">
+                            <i data-feather="coffee" class="fea icon-m-md feature-icon text-primary"></i>
+                        </div>
+                        <h5 class="mt-2">Coffee & Tea</h5>
+                        <p class="text-muted mb-0">The most well-known dummy originated in the 16th century.</p>
+                    </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature feature-transition text-center p-4 rounded">
+                        <div class="icon text-center rounded-pill">
+                            <i data-feather="codesandbox" class="fea icon-m-md feature-icon text-primary"></i>
+                        </div>
+                        <h5 class="mt-2">Free Parking</h5>
+                        <p class="text-muted mb-0">The most well-known dummy originated in the 16th century.</p>
+                    </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature feature-transition text-center p-4 rounded">
+                        <div class="icon text-center rounded-pill">
+                            <i data-feather="headphones" class="fea icon-m-md feature-icon text-primary"></i>
+                        </div>
+                        <h5 class="mt-2">Relax Room</h5>
+                        <p class="text-muted mb-0">The most well-known dummy originated in the 16th century.</p>
+                    </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="feature feature-transition text-center p-4 rounded">
+                        <div class="icon text-center rounded-pill">
+                            <i data-feather="gitlab" class="fea icon-m-md feature-icon text-primary"></i>
+                        </div>
+                        <h5 class="mt-2">Equipped Kitchen</h5>
+                        <p class="text-muted mb-0">The most well-known dummy originated in the 16th century.</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+
+        <div class="container pt-5 mt-100 mt-30">
+            <div class="row justify-content-center">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-6">企業サービス ローコスト</h4><br>
+                    <p class="text-muted para-desc mx-auto">
+                        海外進出に不可欠となる業務のサポートを、ワンストップでご提供します。ジャトラテーマホールは東京、大阪、福岡、上海、台湾、マレーシアなど、全アジアへ出店拡大中です。</p>
+                </div>
+            </div>
+
+            <div class="rounded-lg py-5 mb-30">
+                <img class="container" src="images/coworking/China-Japan.png"></img>
+            </div>
+
+            <div class="row justify-content-center mt-30">
+                <div class="col-12 filters-group-wrap text-center">
+                    <div class="filters-group">
+                        <ul class="container-filter mb-0 categories-filter list-unstyled filter-options">
+                            <li class="list-inline-item categories h6 position-relative text-dark active"
+                                data-group="all">All</li>
+                            <li class="list-inline-item categories h6 position-relative text-dark"
+                                data-group="hanro">海外販路拡大</li>
+                            <li class="list-inline-item categories h6 position-relative text-dark"
+                                data-group="senden">海外宣伝代行</li>
+                            <li class="list-inline-item categories h6 position-relative text-dark"
+                                data-group="jinzai">海外人材紹介</li>
+                            <li class="list-inline-item categories h6 position-relative text-dark"
+                                data-group="sikin">海外資金誘致(M&A)</li>
+                            <li class="list-inline-item categories h6 position-relative text-dark"
+                                data-group="office">海外シェアオフィス</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div id="grid" class="row">
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["hanro"]'>
+                    <div class="work-container work-classic">
+                        <a href="javascript:void(0)"><img src="images/work/1.jpg" class="img-fluid rounded work-image" alt="海外マーケティング調査"></a>
+                        <div class="content pt-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark title">海外マーケティング調査</a></h5>
+                            <p class="text-muted tag mb-0">海外販路拡大</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["senden"]'>
+                    <div class="work-container work-classic">
+                        <a href="javascript:void(0)"><img src="images/work/5.jpg" class="img-fluid rounded work-image" alt="海外展示会代行"></a>
+                        <div class="content pt-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark title">海外展示会代行</a></h5>
+                            <p class="text-muted tag mb-0">海外宣伝代行</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["jinzai"]'>
+                    <div class="work-container work-classic">
+                        <a href="javascript:void(0)"><img src="images/work/7.jpg" class="img-fluid rounded work-image" alt="海外人材紹介"></a>
+                        <div class="content pt-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark title">海外人材紹介</a></h5>
+                            <p class="text-muted tag mb-0">海外人材紹介</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["sikin"]'>
+                    <div class="work-container work-classic">
+                        <a href="javascript:void(0)"><img src="images/work/8.jpg" class="img-fluid rounded work-image" alt="海外資金誘致"></a>
+                        <div class="content pt-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark title">海外資金誘致</a></h5>
+                            <p class="text-muted tag mb-0">海外資金誘致(M&A)</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["hanro"]'>
+                    <div class="work-container work-classic">
+                        <a href="javascript:void(0)"><img src="images/work/2.jpg" class="img-fluid rounded work-image" alt="海外向け入口商品の企画"></a>
+                        <div class="content pt-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark title">海外向け入口商品の企画</a></h5>
+                            <p class="text-muted tag mb-0">海外販路拡大</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+
+
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["senden"]'>
+                    <div class="work-container work-classic">
+                        <a href="javascript:void(0)"><img src="images/work/6.jpg" class="img-fluid rounded work-image" alt="Tiktok & SNS宣伝"></a>
+                        <div class="content pt-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark title">Tiktok & SNS宣伝</a></h5>
+                            <p class="text-muted tag mb-0">海外宣伝代行</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["hanro"]'>
+                    <div class="work-container work-classic">
+                        <a href="javascript:void(0)"><img src="images/work/3.jpg" class="img-fluid rounded work-image" alt="海外企業の予信調査"></a>
+                        <div class="content pt-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark title">海外企業の予信調査</a></h5>
+                            <p class="text-muted tag mb-0">海外販路拡大</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["office"]'>
+                    <div class="work-container work-classic">
+                        <a href="javascript:void(0)"><img src="images/work/9.jpg" class="img-fluid rounded work-image" alt="海外シェアオフィス"></a>
+                        <div class="content pt-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark title">海外シェアオフィス</a></h5>
+                            <p class="text-muted tag mb-0">海外シェアオフィス</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["hanro"]'>
+                    <div class="work-container work-classic">
+                        <a href="javascript:void(0)"><img src="images/work/4.jpg" class="img-fluid rounded work-image" alt="ビジネスマッチング"></a>
+                        <div class="content pt-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark title">ビジネスマッチング</a></h5>
+                            <p class="text-muted tag mb-0">海外販路拡大</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-12 mt-4 pt-2">
+                    <div class="text-center">
+                        <a href="page-work-grid.html" class="btn btn-pills btn-primary">See More Work <i
+                                data-feather="arrow-right" class="fea icon-sm"></i></a>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- End -->
+
+    <!-- Team Start -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">Our Team Members</h4>
+                        <p class="text-muted para-desc mx-auto mb-0">It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="d-flex align-items-center">
+                        <img src="images/client/05.jpg" class="avatar avatar-medium rounded-pill img-thumbnail" alt="">
+                        <div class="content ms-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark">Krista John</a></h5>
+                            <small class="position text-muted">Founder</small>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="d-flex align-items-center">
+                        <img src="images/client/06.jpg" class="avatar avatar-medium rounded-pill img-thumbnail" alt="">
+                        <div class="content ms-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark">Jack John</a></h5>
+                            <small class="position text-muted">C.E.O</small>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="d-flex align-items-center">
+                        <img src="images/client/01.jpg" class="avatar avatar-medium rounded-pill img-thumbnail" alt="">
+                        <div class="content ms-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark">Roger Jackson</a></h5>
+                            <small class="position text-muted">Production Manager</small>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="d-flex align-items-center">
+                        <img src="images/client/02.jpg" class="avatar avatar-medium rounded-pill img-thumbnail" alt="">
+                        <div class="content ms-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark">Luchhi Cina</a></h5>
+                            <small class="position text-muted">Marketing Manager</small>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="d-flex align-items-center">
+                        <img src="images/client/03.jpg" class="avatar avatar-medium rounded-pill img-thumbnail" alt="">
+                        <div class="content ms-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark">Johnny English</a></h5>
+                            <small class="position text-muted">Finance Manager</small>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="d-flex align-items-center">
+                        <img src="images/client/04.jpg" class="avatar avatar-medium rounded-pill img-thumbnail" alt="">
+                        <div class="content ms-3">
+                            <h5 class="mb-0"><a href="javascript:void(0)" class="text-dark">Sophiya Cally</a></h5>
+                            <small class="position text-muted">HR Manager</small>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-12 text-center mt-4 pt-2">
+                    <div class="alert alert-light alert-pills" role="alert">
+                        <span class="badge bg-danger rounded-pill me-1">Jobs</span>
+                        <span class="content">We Are Hiring <a href="page-team.html" class="text-primary"> Send your CV
+                                / Resume</a></span>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+
+    </section>
+    <!--end section-->
+    <!-- Team End -->
+
+
+
+    <div class="container-fluid mt-100 mt-60">
+        <div class="rounded-lg py-5" style="background: url('images/coworking/bg07.jpg');">
+            <div class="row my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-7 col-12">
+                            <div class="section-title text-center text-md-start p-3 p-sm-0">
+                                <h1 class="text-white mb-0">Working together, to create something unique</h1>
+                            </div>
+                        </div>
+                        <!--end col-->
+
+                        <div class="col-lg-4 col-md-5 col-12 mt-5 mt-sm-0 pt-5 pt-sm-0">
+                            <div class="play-icon">
+                                <a href="#" class="video-play-icon">
+                                    <i class="mdi mdi-play mdi-24px text-white rounded-pill bg-primary shadow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end img-->
+    </div>
+    <!--end container-fluid-->
+
+
+
+
+
+
+
+    <!-- BLog Start -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">Latest News or Blog</h4>
+                        <p class="text-muted para-desc mx-auto mb-0">It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="blog-post shadow rounded position-relative overflow-hidden">
+                        <div class="blog-img overflow-hidden position-relative">
+                            <img src="images/blog/01.jpg" class="img-fluid" alt="">
+                            <div class="overlay bg-dark"></div>
+                            <div class="d-flex author-desc align-items-center">
+                                <img src="images/client/05.jpg"
+                                    class="img-fluid avatar avatar-md-sm rounded-pill me-2 shadow" alt="">
+                                <div class="author">
+                                    <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                    <p class="text-white-50 small mb-0">23rd Jan, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="shape overflow-hidden text-white">
+                                <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5><a href="javascript:void(0)" class="title text-dark">Hands on: Beats PowerBeats Pro</a>
+                            </h5>
+                            <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability
+                                is of great importance</p>
+
+                            <div class="post-meta d-flex justify-content-between pt-3 border-top">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="list-inline-item"><a href="javascript:void(0)"
+                                            class="text-dark like me-2"><i data-feather="heart"
+                                                class="fea icon-sm like-icon me-1"></i>36</a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)"
+                                            class="text-dark comment"><i data-feather="message-circle"
+                                                class="fea icon-sm me-1"></i>08</a></li>
+                                </ul>
+                                <a href="javascript:void(0)" class="text-dark read">Read More <i
+                                        class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end post-->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="blog-post shadow rounded position-relative overflow-hidden">
+                        <div class="blog-img overflow-hidden position-relative">
+                            <img src="images/blog/02.jpg" class="img-fluid" alt="">
+                            <div class="overlay bg-dark"></div>
+                            <div class="d-flex author-desc align-items-center">
+                                <img src="images/client/02.jpg"
+                                    class="img-fluid avatar avatar-md-sm rounded-pill me-2 shadow" alt="">
+                                <div class="author">
+                                    <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                    <p class="text-white-50 small mb-0">23rd Jan, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="shape overflow-hidden text-white">
+                                <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5><a href="javascript:void(0)" class="title text-dark">Spotify 100 million subscribers</a>
+                            </h5>
+                            <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability
+                                is of great importance</p>
+
+                            <div class="post-meta d-flex justify-content-between pt-3 border-top">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="list-inline-item"><a href="javascript:void(0)"
+                                            class="text-dark like me-2"><i data-feather="heart"
+                                                class="fea icon-sm like-icon me-1"></i>36</a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)"
+                                            class="text-dark comment"><i data-feather="message-circle"
+                                                class="fea icon-sm me-1"></i>08</a></li>
+                                </ul>
+                                <a href="javascript:void(0)" class="text-dark read">Read More <i
+                                        class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end post-->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="blog-post shadow rounded position-relative overflow-hidden">
+                        <div class="blog-img overflow-hidden position-relative">
+                            <img src="images/blog/03.jpg" class="img-fluid" alt="">
+                            <div class="overlay bg-dark"></div>
+                            <div class="d-flex author-desc align-items-center">
+                                <img src="images/client/07.jpg"
+                                    class="img-fluid avatar avatar-md-sm rounded-pill me-2 shadow" alt="">
+                                <div class="author">
+                                    <a href="javascript:void(0)" class="text-white h6 name">Lisa Marvel</a>
+                                    <p class="text-white-50 small mb-0">23rd Jan, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="shape overflow-hidden text-white">
+                                <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5><a href="javascript:void(0)" class="title text-dark">Hands on: Beats PowerBeats Pro</a>
+                            </h5>
+                            <p class="text-muted">Due to its widespread use as filler text for layouts, non-readability
+                                is of great importance</p>
+
+                            <div class="post-meta d-flex justify-content-between pt-3 border-top">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="list-inline-item"><a href="javascript:void(0)"
+                                            class="text-dark like me-2"><i data-feather="heart"
+                                                class="fea icon-sm like-icon me-1"></i>36</a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)"
+                                            class="text-dark comment"><i data-feather="message-circle"
+                                                class="fea icon-sm me-1"></i>08</a></li>
+                                </ul>
+                                <a href="javascript:void(0)" class="text-dark read">Read More <i
+                                        class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end post-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+
+        <div class="container mt-100 mt-60">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h4 class="title mb-4">Subscribe for Our Newsletter</h4>
+                        <p class="text-muted para-desc mx-auto mb-0">It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout.</p>
+
+                        <div class="subcribe-form mt-4 pt-2">
+                            <form class="position-relative">
+                                <div class="form-group mb-0">
+                                    <input type="email" id="email-subscribe" name="email" class="rounded-pill border"
+                                        placeholder="test@gmail.com">
+                                    <button type="submit" id="subscribe"
+                                        class="btn btn-pills btn-primary">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- BLog End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <a class="logo-footer" href="#">
+                        <img src="images/logo-light.png" height="21" alt="">
+                    </a>
+                    <p class="mt-4">Build responsive, mobile-first projects on the web with the world's most popular
+                        front-end component library.</p>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head font-weight-normal">Landing</h5>
+                    <ul class="list-unstyled footer-list px-0 mt-4">
+                        <li><a href="index-coworking.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Co-working</a></li>
+                        <li><a href="index-job" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Job &
+                                Careers</a></li>
+                        <li><a href="index-startup-business.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Startups</a></li>
+                        <li><a href="index-cloud-hosting.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Hosting</a></li>
+                        <li><a href="index-charity.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Charity</a></li>
+                        <li><a href="index-social-marketing.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Social Media</a></li>
+                        <li><a href="index-minimal-portfolio.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Portfolio</a></li>
+                        <li><a href="index-digital-marketing.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Digital Marketing</a></li>
+                        <li><a href="index-online-learning.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Online Courses</a></li>
+                        <li><a href="index-travel.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Travel</a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head font-weight-normal">About</h5>
+                    <ul class="list-unstyled footer-list px-0 mt-4">
+                        <li><a href="page-about.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> About
+                                us</a></li>
+                        <li><a href="page-services.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Features</a></li>
+                        <li><a href="page-pricing.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Pricing</a></li>
+                        <li><a href="page-team.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Team</a></li>
+                        <li><a href="page-blog.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Blog &
+                                News</a></li>
+                        <li><a href="page-login.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Login</a></li>
+                        <li><a href="page-signup.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Sign
+                                Up</a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head font-weight-normal">Office</h5>
+                    <ul class="list-unstyled footer-list px-0 mt-4">
+                        <li><i data-feather="map-pin" class="fea icon-sm me-2"></i><a href="#" class="text-foot">Londan,
+                                England</a></li>
+                        <li><i data-feather="mail" class="fea icon-sm me-2"></i><a href="mailto:contact@example.com"
+                                class="text-foot">test@yourdomain.com</a></li>
+                        <li><i data-feather="phone" class="fea icon-sm me-2"></i><a href="tel:+152534-468-854"
+                                class="text-foot">+(125) 1254-5487</a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">Copyright ©
+                            <script>document.write(new Date().getFullYear())</script> <i
+                                class="mdi mdi-heart text-danger"></i> <a class="text-reset">株式会社ジャトラコンサルティング</a>
+                        </p>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <ul class="list-unstyled text-sm-end social-icon social mb-0">
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                    </ul>
+                    <!--end icon-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Modal Content Start -->
+    <div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded shadow border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Login </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" name="email" required=""
+                                        placeholder="Your Email :">
+                                </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Password <span class="text-danger">*</span></label>
+                                    <input type="password" class="form-control" required="" placeholder="Password :">
+                                </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between">
+                                    <div class="mb-3 d-inline-block">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <p class="forgot-pass mb-0"><a href="page-reset-password.html"
+                                            class="text-dark fw-bold">Forgot password ?</a></p>
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-12 mb-0">
+                                <button class="btn btn-primary w-100">Sign in</button>
+                            </div>
+                            <!--end col-->
+                            <div class="col-12 mt-4 text-center">
+                                <h6 class="mb-0">Or Login With</h6>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-sm-6 mt-4">
+                                        <a href="#" class="btn w-100 btn-light bg-facebook"><i
+                                                class="mdi mdi-facebook"></i> Facebook</a>
+                                    </div>
+                                    <div class="col-sm-6 mt-4">
+                                        <a href="#" class="btn w-100 btn-light"><i class="mdi mdi-google"></i>
+                                            Google</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a
+                                        href="page-signup.html" class="text-dark fw-bold">Sign Up</a></p>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                    </form>
+                    <!--end form-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Content End -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"></i>
+    </a>
+    <!-- Back to top -->
+
+
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Shuffle Popup -->
+    <script src="js/shuffle.min.js"></script>
+    <script src="js/tobii.min.js"></script>
+    <script src="js/gallery.init.js"></script>
+    <!-- Typed -->
+    <script src="js/typed.js"></script>
+    <script src="js/typed.init.js"></script>
+    <!-- SLIDER -->
+    <script src="js/tiny-slider.js "></script>
+    <script src="js/tiny-slider-init.js "></script>
+    <!-- Feather icon -->
+    <script src="js/feather.min.js"></script>
+    <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
+
+    <!-- Main Js -->
+    <script src="js/app.js"></script>
+
+
+    <!-- Swiper -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.init.js"></script>
+
+    <script>
+        const tobii = new Tobii()
+    </script>
+</body>
+
+</html>
