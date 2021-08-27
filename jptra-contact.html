@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Incrave - Responsive Landing Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="メッセージ" content="Responsive Multipurpose Creative Landing Page Template" />
+    <meta name="keywords" content="Bootstrap 5, SASS, Clean, Multipurpose, Responsive, Modern" />
+    <meta content="Shreethemes" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- Main Css -->
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+
+    <!-- TAGLINE START-->
+    <div class="tagline">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <ul class="list-unstyled mb-0 px-0 tag-social">
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="facebook" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="instagram" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="twitter" class="fea icon-sm"></i></a></li>
+                        </ul>
+
+                        <ul class="list-unstyled mb-0 px-0 tag-right">
+                            <li class="list-inline-item me-2">
+                                <div class="mb-0">
+                                    <select class="form-select form-select-sm select-lang">
+
+                                        <option value="1">日本語</option>
+                                        <option value="2">中文</option>
+                                        <option value="3">English</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="settings" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" data-bs-toggle="modal"
+                                    data-bs-target="#LoginForm" class="text-dark"><i data-feather="user"
+                                        class="fea icon-sm"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </div>
+    <!--end tagline-->
+    <!-- TAGLINE END-->
+
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky taglines">
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a class="logo" href="#">
+                    <img src="images/logo-dark.png" height="21" alt="">
+                </a>
+            </div>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index.html" class="sub-menu-item">Top</a></li>
+                    <li class="has-submenu parent-menu-item">
+                        <a href="jptra-thinking.html">私たちの考え</a>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="jptra-company.html">企業情報</a>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="jptra-business.html">事業内容</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">企業サポート</a><span
+                                    class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="" class="sub-menu-item">海外進出サポート</a></li>
+                                    <li><a href="" class="sub-menu-item">Grid Full</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="sub-menu-item">テーマ・ホール</a></li>
+                            <li><a href="" class="sub-menu-item">オンラン無在庫販売</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="jptra-team.html">チーム紹介</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="" class="sub-menu-item">Blogs</a></li>
+                            <li><a href="" class="sub-menu-item">Blog & Sidebar</a></li>
+                            <li><a href="" class="sub-menu-item">Blog Details One</a></li>
+                            <li><a href="" class="sub-menu-item">Blog Details Two</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="jptra-team.html">案件事例</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="" class="sub-menu-item">事例A</a></li>
+                            <li><a href="" class="sub-menu-item">事例B</a></li>
+                            <li><a href="" class="sub-menu-item">事例C</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="jptra-contact.html" class="sub-menu-item">お問い合わせ</a></li>
+                </ul>
+                <!--end navigation menu-->
+
+                <ul class="list-unstyled small-tagline d-none mb-0">
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="settings" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#LoginForm" class="text-dark"><i data-feather="user"
+                                class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2">
+                        <div class="mb-0">
+                            <select class="form-select form-select-sm select-lang">
+                                <option value="1">日本語</option>
+                                <option value="2">中文</option>
+                                <option value="3">English</option>
+                    </select>
+                        </div>
+                    </li>
+
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="facebook" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="instagram" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="twitter" class="fea icon-sm"></i></a></li>
+                </ul>
+                <!--end login button-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="bg-half border-bottom d-table w-100" style="background: url('images/bg/job.jpg') center center;">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="title-heading text-center">
+                        <h3 class="font-weight-normal text-white mb-4">お問い合わせ</h3>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Hero End -->
+
+    <!-- Job apply form Start -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-md-10">
+                    <div class="custom-form">
+                        <form class="rounded bg-light shadow p-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">お名前 :<span class="text-danger">*</span></label>
+                                        <input name="name" id="name" type="text" class="form-control"
+                                            placeholder="Name">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Eメール :<span class="text-danger">*</span></label>
+                                        <input name="email" id="email" type="email" class="form-control"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">電話番号 :<span
+                                                class="text-danger">*</span></label>
+                                        <input name="number" id="number"  class="form-control">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">タイトル :</label>
+                                        <input name="subject" id="subject" class="form-control" placeholder="Job title">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">お問合せのビジネスタイプ :</label>
+                                        <select class="form-control custom-select" id="Sortbylist-Shop">
+                                            <option>全ビジネス</option>
+                                            <option>海外進出</option>
+                                            <option>テーマ・ホール</option>
+                                            <option>オンライン無在庫販売</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">業務実施都市 :</label>
+                                        <input name="text" id="location" class="form-control" placeholder="Location">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">メッセージ :</label>
+                                        <textarea name="message" id="message" rows="4" class="form-control"
+                                            placeholder="message"></textarea>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-md-12">
+                                    <div class="mb-3 position-relative">
+                                        <label for="formFile" class="form-label">添付ファイルはこちら :</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">ご同意 <a href="#"
+                                                    class="text-primary">　利用規約</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary"
+                                        value="　送　信　">
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </form>
+                        <!--end form-->
+                    </div>
+                    <!--end custom-form-->
+                </div>
+            </div>
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Job apply form End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <a class="logo-footer" href="#">
+                        <img src="images/logo-light.png" height="21" alt="">
+                    </a>
+                    <p class="mt-4">Build responsive, mobile-first projects on the web with the world's most popular
+                        front-end component library.</p>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head font-weight-normal">Landing</h5>
+                    <ul class="list-unstyled footer-list px-0 mt-4">
+                        <li><a href="index-coworking.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Co-working</a></li>
+                        <li><a href="index-job" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Job &
+                                Careers</a></li>
+                        <li><a href="index-startup-business.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Startups</a></li>
+                        <li><a href="index-cloud-hosting.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Hosting</a></li>
+                        <li><a href="index-charity.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Charity</a></li>
+                        <li><a href="index-social-marketing.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Social Media</a></li>
+                        <li><a href="index-minimal-portfolio.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Portfolio</a></li>
+                        <li><a href="index-digital-marketing.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Digital Marketing</a></li>
+                        <li><a href="index-online-learning.html" class="text-foot"><i
+                                    class="mdi mdi-chevron-right me-1"></i> Online Courses</a></li>
+                        <li><a href="index-travel.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Travel</a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head font-weight-normal">About</h5>
+                    <ul class="list-unstyled footer-list px-0 mt-4">
+                        <li><a href="page-about.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> About
+                                us</a></li>
+                        <li><a href="page-services.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Features</a></li>
+                        <li><a href="page-pricing.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Pricing</a></li>
+                        <li><a href="page-team.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Team</a></li>
+                        <li><a href="page-blog.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Blog &
+                                News</a></li>
+                        <li><a href="page-login.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Login</a></li>
+                        <li><a href="page-signup.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Sign
+                                Up</a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head font-weight-normal">Office</h5>
+                    <ul class="list-unstyled footer-list px-0 mt-4">
+                        <li><i data-feather="map-pin" class="fea icon-sm me-2"></i><a href="#" class="text-foot">Londan,
+                                England</a></li>
+                        <li><i data-feather="mail" class="fea icon-sm me-2"></i><a href="mailto:contact@example.com"
+                                class="text-foot">test@yourdomain.com</a></li>
+                        <li><i data-feather="phone" class="fea icon-sm me-2"></i><a href="tel:+152534-468-854"
+                                class="text-foot">+(125) 1254-5487</a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">©
+                            <script>document.write(new Date().getFullYear())</script> Incrave. Design with <i
+                                class="mdi mdi-heart text-danger"></i> by <a href="http://www.shreethemes.in"
+                                target="_blank" class="text-reset">Shreethemes</a>.
+                        </p>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <ul class="list-unstyled text-sm-end social-icon social mb-0">
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                    </ul>
+                    <!--end icon-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Modal Content Start -->
+    <div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded shadow border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Login </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" name="email" required=""
+                                        placeholder="Your Email :">
+                                </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Password <span class="text-danger">*</span></label>
+                                    <input type="password" class="form-control" required="" placeholder="Password :">
+                                </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between">
+                                    <div class="mb-3 d-inline-block">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <p class="forgot-pass mb-0"><a href="page-reset-password.html"
+                                            class="text-dark fw-bold">Forgot password ?</a></p>
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-12 mb-0">
+                                <button class="btn btn-primary w-100">Sign in</button>
+                            </div>
+                            <!--end col-->
+                            <div class="col-12 mt-4 text-center">
+                                <h6 class="mb-0">Or Login With</h6>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-sm-6 mt-4">
+                                        <a href="#" class="btn w-100 btn-light bg-facebook"><i
+                                                class="mdi mdi-facebook"></i> Facebook</a>
+                                    </div>
+                                    <div class="col-sm-6 mt-4">
+                                        <a href="#" class="btn w-100 btn-light"><i class="mdi mdi-google"></i>
+                                            Google</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a
+                                        href="page-signup.html" class="text-dark fw-bold">Sign Up</a></p>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                    </form>
+                    <!--end form-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Content End -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"></i>
+    </a>
+    <!-- Back to top -->
+
+
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Feather icon -->
+    <script src="js/feather.min.js"></script>
+    <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
+
+    <!-- Main Js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

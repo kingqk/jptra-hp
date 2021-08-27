@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Incrave - Responsive Landing Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="メッセージ" content="Responsive Multipurpose Creative Landing Page Template" />
+    <meta name="description" content="Responsive Multipurpose Creative Landing Page Template" />
     <meta name="keywords" content="Bootstrap 5, SASS, Clean, Multipurpose, Responsive, Modern" />
     <meta content="Shreethemes" name="author" />
     <!-- favicon -->
@@ -45,9 +45,9 @@
                                 <div class="mb-0">
                                     <select class="form-select form-select-sm select-lang">
 
-                                        <option value="4">English</option>
-                                        <option value="1">Spanish</option>
-                                        <option value="3">French</option>
+                                        <option value="1">日本語</option>
+                                        <option value="2">中文</option>
+                                        <option value="3">English</option>
                                     </select>
                                 </div>
                             </li>
@@ -74,8 +74,7 @@
             <!-- Logo container-->
             <div>
                 <a class="logo" href="#">
-                    <img src="images/logo-dark.png" class="l-dark" height="21" alt="">
-                    <img src="images/logo-light.png" class="l-light" height="21" alt="">
+                    <img src="images/logo-dark.png" height="21" alt="">
                 </a>
             </div>
             <!-- End Logo container-->
@@ -95,29 +94,52 @@
 
             <div id="navigation">
                 <!-- Navigation Menu-->
-                <ul class="navigation-menu nav-light">
+                <ul class="navigation-menu">
                     <li><a href="index.html" class="sub-menu-item">Top</a></li>
-                    <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">私たちの考え</a><span
-                            class="menu-arrow"></span></li>
-
-                    <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">企業情報</a><span
-                            class="menu-arrow"></span></li>
-
-                    <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">事業内容</a><span
-                            class="menu-arrow"></span></li>
-
-                    <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">チーム紹介</a><span
-                            class="menu-arrow"></span></li>
+                    <li class="has-submenu parent-menu-item">
+                        <a href="jptra-thinking.html">私たちの考え</a>
+                    </li>
 
                     <li class="has-submenu parent-parent-menu-item">
-                        <a href="javascript:void(0)">案件事例</a><span class="menu-arrow"></span>
+                        <a href="jptra-company.html">企業情報</a>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="jptra-business.html">事業内容</a><span class="menu-arrow"></span>
                         <ul class="submenu">
-                            <li><a href="page-blog.html" class="sub-menu-item">事例①</a></li>
-                            <li><a href="page-blog-sidebar.html" class="sub-menu-item">事例②</a></li>
-                            <li><a href="page-blog-detail.html" class="sub-menu-item">事例③</a></li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">企業サポート</a><span
+                                    class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="" class="sub-menu-item">海外進出サポート</a></li>
+                                    <li><a href="" class="sub-menu-item">Grid Full</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="sub-menu-item">テーマ・ホール</a></li>
+                            <li><a href="" class="sub-menu-item">オンラン無在庫販売</a></li>
+
                         </ul>
                     </li>
-                    <li><a href="contact-us.html" class="sub-menu-item">お問い合わせ</a></li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="jptra-team.html">チーム紹介</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="" class="sub-menu-item">Blogs</a></li>
+                            <li><a href="" class="sub-menu-item">Blog & Sidebar</a></li>
+                            <li><a href="" class="sub-menu-item">Blog Details One</a></li>
+                            <li><a href="" class="sub-menu-item">Blog Details Two</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="jptra-team.html">案件事例</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="" class="sub-menu-item">事例A</a></li>
+                            <li><a href="" class="sub-menu-item">事例B</a></li>
+                            <li><a href="" class="sub-menu-item">事例C</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="jptra-contact.html" class="sub-menu-item">お問い合わせ</a></li>
                 </ul>
                 <!--end navigation menu-->
 
@@ -128,12 +150,12 @@
                             data-bs-target="#LoginForm" class="text-dark"><i data-feather="user"
                                 class="fea icon-sm"></i></a></li>
                     <li class="list-inline-item me-2">
-                        <div class="form-group mb-0">
+                        <div class="mb-0">
                             <select class="form-select form-select-sm select-lang">
-                                <option value="4">日本語</option>
-                                <option value="1">English</option>
-                                <option value="3">中文</option>
-                            </select>
+                                <option value="1">日本語</option>
+                                <option value="2">中文</option>
+                                <option value="3">English</option>
+                    </select>
                         </div>
                     </li>
 
@@ -162,7 +184,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="title-heading text-center">
-                        <h3 class="font-weight-normal text-white mb-4">お問い合わせ</h3>
+                        <h3 class="font-weight-normal text-white mb-4">私たちの考え</h3>
                     </div>
                 </div>
                 <!--end col-->
@@ -174,111 +196,113 @@
     <!--end section-->
     <!-- Hero End -->
 
-    <!-- Job apply form Start -->
-    <section class="section">
+
+    <!-- Hero Start -->
+    <section class="bg-half border-bottom bg-light d-table w-100">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-9 col-md-10">
-                    <div class="custom-form">
-                        <form class="rounded bg-light shadow p-4">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">お名前 :<span class="text-danger">*</span></label>
-                                        <input name="name" id="name" type="text" class="form-control"
-                                            placeholder="Name">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Eメール :<span class="text-danger">*</span></label>
-                                        <input name="email" id="email" type="email" class="form-control"
-                                            placeholder="Email">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">電話番号 :<span
-                                                class="text-danger">*</span></label>
-                                        <input name="number" id="number"  class="form-control">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">タイトル :</label>
-                                        <input name="subject" id="subject" class="form-control" placeholder="Job title">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">お問合せのビジネスタイプ :</label>
-                                        <select class="form-control custom-select" id="Sortbylist-Shop">
-                                            <option>全ビジネス</option>
-                                            <option>海外進出</option>
-                                            <option>テーマ・ホール</option>
-                                            <option>オンライン無在庫販売</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">業務実施都市 :</label>
-                                        <input name="text" id="location" class="form-control" placeholder="Location">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label class="form-label">メッセージ :</label>
-                                        <textarea name="message" id="message" rows="4" class="form-control"
-                                            placeholder="message"></textarea>
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-12">
-                                    <div class="mb-3 position-relative">
-                                        <label for="formFile" class="form-label">添付ファイルはこちら :</label>
-                                        <input class="form-control" type="file" id="formFile">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">ご同意 <a href="#"
-                                                    class="text-primary">　利用規約</a></label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end col-->
-                            </div>
-                            <!--end row-->
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary"
-                                        value="　送　信　">
-                                </div>
-                                <!--end col-->
-                            </div>
-                            <!--end row-->
-                        </form>
-                        <!--end form-->
+                <div class="col-lg-12">
+                    <div class="title-heading text-center">
+                        <h3 class="font-weight-normal"> Yellow background and <span class="fw-bold">books</span> </h3>
+                        <ul class="list-unstyled mt-4">
+                            <li class="list-inline-item h6 user text-muted me-2"> <span class="text-dark">Client
+                                    :</span> Lisa Marvel</li>
+                            <li class="list-inline-item h6 date text-muted"> <span class="text-dark">Date :</span> 1st
+                                February, 2020</li>
+                        </ul>
                     </div>
-                    <!--end custom-form-->
                 </div>
+                <!--end col-->
             </div>
+            <!--end row-->
         </div>
         <!--end container-->
     </section>
     <!--end section-->
-    <!-- Job apply form End -->
+    <!-- Hero End -->
+
+    <!-- Work Details Start -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 order-md-1 order-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <img src="images/work/4.jpg" class="img-fluid rounded" alt="">
+                    <img src="images/work/2.jpg" class="img-fluid rounded mt-4" alt="">
+                    <img src="images/work/3.jpg" class="img-fluid rounded mt-4" alt="">
+                    <img src="images/work/1.jpg" class="img-fluid rounded mt-4" alt="">
+                    <img src="images/work/5.jpg" class="img-fluid rounded mt-4" alt="">
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-6 col-md-6 col-12 mt-md-5 pt-md-5 order-md-2 order-1">
+                    <div class="sticky-bar">
+                        <div class="work-details rounded shadow p-4">
+                            <h5 class="title border-bottom pb-3 mb-3">Project Info :</h5>
+                            <dl class="row mb-0">
+                                <dt class="col-md-4 col-5">Client :</dt>
+                                <dd class="col-md-8 col-7 text-muted">Lisa Marvel</dd>
+
+                                <dt class="col-md-4 col-5">Category :</dt>
+                                <dd class="col-md-8 col-7 text-muted">Web Design</dd>
+
+                                <dt class="col-md-4 col-5">Date :</dt>
+                                <dd class="col-md-8 col-7 text-muted">23rd Sep, 2019</dd>
+
+                                <dt class="col-md-4 col-5">Website :</dt>
+                                <dd class="col-md-8 col-7 text-muted">www.yourdomain.com</dd>
+
+                                <dt class="col-md-4 col-5">Location :</dt>
+                                <dd class="col-md-8 col-7 mb-0 text-muted">3/2/64 Mongus Street, UK</dd>
+                            </dl>
+                        </div>
+
+                        <div class="mt-4 pt-2">
+                            <p class="text-muted mb-0">" There is now an abundance of readable dummy texts. These are
+                                usually used when a text is required purely to fill a space. These alternatives to the
+                                classic Lorem Ipsum texts are often amusing and tell short, funny or nonsensical
+                                stories. "</p>
+
+                            <ul class="list-unstyled feature-list text-muted px-0 mt-4">
+                                <li><i data-feather="arrow-right-circle"
+                                        class="fea icon-sm text-primary me-2"></i>Digital Marketing Solutions for
+                                    Tomorrow</li>
+                                <li><i data-feather="arrow-right-circle" class="fea icon-sm text-primary me-2"></i>Our
+                                    Talented & Experienced Marketing Agency</li>
+                                <li><i data-feather="arrow-right-circle"
+                                        class="fea icon-sm text-primary me-2"></i>Create your own skin to match your
+                                    brand</li>
+                                <li><i data-feather="arrow-right-circle"
+                                        class="fea icon-sm text-primary me-2"></i>Digital Marketing Solutions for
+                                    Tomorrow</li>
+                                <li><i data-feather="arrow-right-circle" class="fea icon-sm text-primary me-2"></i>Our
+                                    Talented & Experienced Marketing Agency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div class="row">
+                <div class="col-12 mt-4 pt-2">
+                    <ul class="pagination d-flex align-items-center justify-content-between mb-0 list-unstyled">
+                        <li class="d-inline"><a href="#"
+                                class="float-start text-dark border pe-3 ps-3 pt-2 pb-2">Previous</a></li>
+                        <li class="active d-inline"><a href="#"
+                                class="float-start text-white border rounded pe-3 ps-3 pt-2 pb-2">+</a></li>
+                        <li class="d-inline"><a href="#"
+                                class="float-start text-dark border pe-3 ps-3 pt-2 pb-2">Next</a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Work Details End -->
 
     <!-- Footer Start -->
     <footer class="footer">
