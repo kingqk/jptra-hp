@@ -167,11 +167,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #8492a6 !important;
+  color: #647183 !important;
 }
 
 a.text-muted:hover, a.text-muted:focus {
-  color: #68788f !important;
+  color: #475263 !important;
 }
 
 .bg-light {
