@@ -190,8 +190,9 @@
     <!-- Hero End -->
 
     <!-- Job apply form Start -->
-    <section class="section">
+    <section class="section bg-light">
         <div class="container">
+            <h3 class="title text-center mt-100 mb-60">お問い合わせ</h3>
             <div class="row justify-content-center">
                 <div class="col-lg-9 col-md-10">
                     <div class="custom-form">
@@ -199,59 +200,84 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">お名前 :<span class="text-danger">*</span></label>
-                                        <input name="name" id="name" type="text" class="form-control"
-                                            placeholder="Name">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Eメール :<span class="text-danger">*</span></label>
-                                        <input name="email" id="email" type="email" class="form-control"
-                                            placeholder="Email">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">電話番号 :<span
-                                                class="text-danger">*</span></label>
-                                        <input name="number" id="number"  class="form-control">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">タイトル :</label>
-                                        <input name="subject" id="subject" class="form-control" placeholder="Job title">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
                                         <label class="form-label">お問合せ内容 :</label>
                                         <select class="form-control custom-select" id="Sortbylist-Shop">
+                                            <option>お選びください</option>
                                             <option>企業サービス</option>
                                             <option>体験型展示販売</option>
                                             <option>無在庫販売</option>
                                             <option>海外商品仕入・OEM</option>
+                                            <option>その他</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <!--end col-->
+
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">会社名 :<span class="text-danger">*</span></label>
+                                        <input name="name" id="name" type="text" class="form-control"
+                                            placeholder="株式会社ジャトラコンサルティング">
+                                    </div>
+                                </div>
+                                <!--end col-->
+
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">フリガナ :</label>
+                                        <input name="name" id="name" type="text" class="form-control"
+                                            placeholder="カブシキガイシャジャトラコンサルティング">
+                                    </div>
+                                </div>
+                                <!--end col-->
+
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">住　所 :</label>
+                                        <input name="name" id="name" type="text"  class="form-control">
+                                    </div>
+                                </div>
+                                <!--end col-->
+
+
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">電話番号 :<span
+                                                class="text-danger">*</span></label>
+                                        <input name=" name" id="name" type="number"  class="form-control">
+                                    </div>
+                                </div>
+                                <!--end col-->
+
+
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">メールアドレス :<span class="text-danger">*</span></label>
+                                        <input name="email" id="email" type="email" class="form-control"
+                                            placeholder="example@mail.com">
+                                    </div>
+                                </div>
+                                <!--end col-->
+     
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">担当名 :</label>
+                                        <input name="name" id="name" class="form-control" placeholder="野田　太郎">
                                     </div>
                                 </div>
                                 <!--end col-->
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">業務実施都市 :</label>
-                                        <input name="text" id="location" class="form-control" placeholder="Location">
+                                        <label class="form-label">ホームページもしくはネットショップリング :</label>
+                                        <input name="text" id="location" class="form-control" placeholder=" link">
                                     </div>
                                 </div>
                                 <!--end col-->
                                 <div class="col-md-12">
                                     <div class="mb-3">
-                                        <label class="form-label">メッセージ :</label>
+                                        <label class="form-label">ご要望 :</label>
                                         <textarea name="message" id="message" rows="4" class="form-control"
-                                            placeholder="message"></textarea>
+                                            placeholder="メッセージ"></textarea>
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -259,17 +285,6 @@
                                     <div class="mb-3 position-relative">
                                         <label for="formFile" class="form-label">添付ファイルはこちら :</label>
                                         <input class="form-control" type="file" id="formFile">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">ご同意 <a href="#"
-                                                    class="text-primary">　利用規約</a></label>
-                                        </div>
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -290,10 +305,10 @@
                 </div>
             </div>
         </div>
+        <br>
         <!--end container-->
     </section>
     <!--end section-->
-    <!-- Job apply form End -->
 
     <!-- Footer Start -->
     <footer class="footer">
