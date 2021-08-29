@@ -112,7 +112,50 @@
                     </li>
 
                     <li class="has-submenu parent-parent-menu-item">
-                        <a>事業内容</a><span class="menu-arrow"></span>
+                        <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="page-about.html" class="sub-menu-item"> About Us</a></li>
+                            <li><a href="page-services.html" class="sub-menu-item">Services</a></li>
+                            <li><a href="page-pricing.html" class="sub-menu-item">Pricing</a></li>
+                            <li><a href="page-team.html" class="sub-menu-item"> Team</a></li>
+                            <li><a href="page-faq.html" class="sub-menu-item"> F.A.Q</a></li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Careers</a><span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="page-job-grid.html" class="sub-menu-item">Job Grid</a></li>
+                                    <li><a href="page-job-listing.html" class="sub-menu-item">Job Listing</a></li>
+                                    <li><a href="page-job-detail.html" class="sub-menu-item">Job Details</a></li>
+                                    <li><a href="page-job-apply.html" class="sub-menu-item">Job Apply Form</a></li>
+                                    <li><a href="page-job-company.html" class="sub-menu-item">Company Details</a></li>
+                                    <li><a href="page-job-candidate.html" class="sub-menu-item">Candidate Details</a></li>
+                                </ul>  
+                            </li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> User</a><span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="page-login.html" class="sub-menu-item">Login</a></li>
+                                    <li><a href="page-signup.html" class="sub-menu-item">Sign Up</a></li>
+                                    <li><a href="page-reset-password.html" class="sub-menu-item">Forgot Password</a></li>
+                                </ul>  
+                            </li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Special</a><span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="page-comingsoon.html" class="sub-menu-item">Coming Soon</a></li>
+                                    <li><a href="page-maintenance.html" class="sub-menu-item">Maintenance</a></li>
+                                    <li><a href="page-404.html" class="sub-menu-item">404 Error</a></li>
+                                </ul>  
+                            </li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Contact</a><span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="contact-simple.html" class="sub-menu-item">Simple</a></li>
+                                    <li><a href="contact-creative.html" class="sub-menu-item">Creative</a></li>
+                                </ul>  
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">事業内容</a><span class="menu-arrow"></span>
                         <ul class="submenu">
                             <li><a href="jptra-business.html" class="sub-menu-item">事業一覧</a></li>
                             <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">企業サービス<span
@@ -1000,7 +1043,7 @@
 
     
     <!-- Job apply form Start -->
-    <section class="sectio　bg-light">
+    <section class="section bg-light">
         <div class="container">
             <h3 class="title text-center mt-100 mb-60">お問い合わせ</h3>
             <div class="row justify-content-center">
@@ -1027,7 +1070,7 @@
                                     <div class="mb-3">
                                         <label class="form-label">会社名 :<span class="text-danger">*</span></label>
                                         <input name="name" id="name" type="text" class="form-control"
-                                            placeholder="Name">
+                                            placeholder="株式会社ジャトラコンサルティング">
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -1036,7 +1079,7 @@
                                     <div class="mb-3">
                                         <label class="form-label">フリガナ :</label>
                                         <input name="name" id="name" type="text" class="form-control"
-                                            placeholder="Name">
+                                            placeholder="カブシキガイシャジャトラコンサルティング">
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -1044,7 +1087,7 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">住　所 :</label>
-                                        <input name="name" id="name"  class="form-control">
+                                        <input name="name" id="name" type="text"  class="form-control">
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -1054,7 +1097,7 @@
                                     <div class="mb-3">
                                         <label class="form-label">電話番号 :<span
                                                 class="text-danger">*</span></label>
-                                        <input name=" name" id="name"  class="form-control">
+                                        <input name=" name" id="name" type="number"  class="form-control">
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -1064,7 +1107,7 @@
                                     <div class="mb-3">
                                         <label class="form-label">メールアドレス :<span class="text-danger">*</span></label>
                                         <input name="email" id="email" type="email" class="form-control"
-                                            placeholder="Email">
+                                            placeholder="example@mail.com">
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -1072,14 +1115,14 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">担当名 :</label>
-                                        <input name="name" id="name" class="form-control" placeholder="Job title">
+                                        <input name="name" id="name" class="form-control" placeholder="野田　太郎">
                                     </div>
                                 </div>
                                 <!--end col-->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">ホームページもしくはネットショップリング :</label>
-                                        <input name="text" id="location" class="form-control" placeholder="Location">
+                                        <input name="text" id="location" class="form-control" placeholder=" link">
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -1087,7 +1130,7 @@
                                     <div class="mb-3">
                                         <label class="form-label">ご要望 :</label>
                                         <textarea name="message" id="message" rows="4" class="form-control"
-                                            placeholder="message"></textarea>
+                                            placeholder="メッセージ"></textarea>
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -1095,17 +1138,6 @@
                                     <div class="mb-3 position-relative">
                                         <label for="formFile" class="form-label">添付ファイルはこちら :</label>
                                         <input class="form-control" type="file" id="formFile">
-                                    </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">ご同意 <a href="#"
-                                                    class="text-primary">　利用規約</a></label>
-                                        </div>
                                     </div>
                                 </div>
                                 <!--end col-->
