@@ -3001,7 +3001,7 @@ p {
 
 .swiper-slider-hero .swiper-pagination-bullet {
   color: #f8f9fa;
-  background:fixed;
+  background: transparent;
 }
 
 .swiper-slider-hero .swiper-pagination-bullet-active {
