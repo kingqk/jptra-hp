@@ -2943,7 +2943,7 @@ p {
 
 .swiper-slider-hero .swiper-container,
 .swiper-slider-hero .swiper-slide .slide-inner {
-  position: transparent;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
