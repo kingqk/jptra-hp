@@ -2029,7 +2029,7 @@ textarea.form-control {
 
 body {
   font-family: "Muli", sans-serif;
-  overflow-x: hidden !important;
+  overflow-x:inherit !important;
   font-size: 16px;
   color: #3c4858;
 }
