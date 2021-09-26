@@ -171,18 +171,20 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9 col-md-10">
                     <div class="custom-form">
-                        <form class="rounded bg-light shadow p-4">
+                        <form class="rounded bg-light shadow p-4" method="post" name="myForm" onsubmit="return validateForm()">
+                            <p id="error-msg"></p>
+                            <div id="simple-msg"></div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">お問合せ内容 :</label>
-                                        <select class="form-control custom-select" id="Sortbylist-Shop">
-                                            <option>お選びください</option>
-                                            <option>企業サービス</option>
-                                            <option>体験型展示販売</option>
-                                            <option>無在庫販売</option>
-                                            <option>海外商品仕入・OEM</option>
-                                            <option>その他</option>
+                                        <label class="form-label">お問合せ内容 :<span class="text-danger">*</span></label>
+                                        <select name="subject" class="form-control custom-select" id="Sortbylist-Shop">
+                                            <option value="">お選びください</option>
+                                            <option value="企業サービス">企業サービス</option>
+                                            <option value="体験型展示販売">体験型展示販売</option>
+                                            <option value="無在庫販売">無在庫販売</option>
+                                            <option value="海外商品仕入・OEM">海外商品仕入・OEM</option>
+                                            <option value="その他">その他</option>
                                         </select>
                                     </div>
                                 </div>
@@ -191,7 +193,7 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">会社名 :<span class="text-danger">*</span></label>
-                                        <input name="name" id="name" type="text" class="form-control"
+                                        <input name="companyNm" id="companyNmId" type="text" class="form-control"
                                             placeholder="株式会社ジャトラコンサルティング">
                                     </div>
                                 </div>
@@ -199,8 +201,8 @@
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">フリガナ :</label>
-                                        <input name="name" id="name" type="text" class="form-control"
+                                        <label class="form-label">フリガナ :<span class="text-danger">*</span></label>
+                                        <input name="companyKanaNm" id="companyKanaNmId" type="text" class="form-control"
                                             placeholder="カブシキガイシャジャトラコンサルティング">
                                     </div>
                                 </div>
@@ -208,8 +210,9 @@
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">住　所 :</label>
-                                        <input name="name" id="name" type="text"  class="form-control">
+                                        <label class="form-label">住　所 :<span class="text-danger">*</span></label>
+                                        <input name="address" id="addressId" type="text"  class="form-control"
+                                        placeholder="東京都千代田区岩本町2丁目1番3号">
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -217,9 +220,8 @@
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">電話番号 :<span
-                                                class="text-danger">*</span></label>
-                                        <input name=" name" id="name" type="number"  class="form-control">
+                                        <label class="form-label">電話番号(ハイフンなし) :<spanclass="text-danger">*</span></label>
+                                        <input name="telno" id="telnoId" type="number" class="form-control">
                                     </div>
                                 </div>
                                 <!--end col-->
@@ -228,7 +230,7 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">メールアドレス :<span class="text-danger">*</span></label>
-                                        <input name="email" id="email" type="email" class="form-control"
+                                        <input name="email" id="emailId" type="email" class="form-control"
                                             placeholder="example@mail.com">
                                     </div>
                                 </div>
@@ -236,32 +238,32 @@
      
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">担当名 :</label>
-                                        <input name="name" id="name" class="form-control" placeholder="野田　太郎">
+                                        <label class="form-label">担当名 :<span class="text-danger">*</span></label>
+                                        <input name="contactor" id="contactorId" class="form-control" placeholder="野田　太郎">
                                     </div>
                                 </div>
                                 <!--end col-->
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">ホームページもしくはネットショップリング :</label>
-                                        <input name="text" id="location" class="form-control" placeholder=" link">
+                                        <label class="form-label">ホームページもしくはネットショップリング :<span class="text-danger">*</span></label>
+                                        <input name="hpLink" id="hpLinkId" class="form-control" placeholder=" link">
                                     </div>
                                 </div>
                                 <!--end col-->
                                 <div class="col-md-12">
                                     <div class="mb-3">
-                                        <label class="form-label">ご要望 :</label>
-                                        <textarea name="message" id="message" rows="4" class="form-control"
+                                        <label class="form-label">ご要望 :<span class="text-danger">*</span></label>
+                                        <textarea name="message" id="messageId" rows="4" class="form-control"
                                             placeholder="メッセージ"></textarea>
                                     </div>
                                 </div>
                                 <!--end col-->
-                                <div class="col-md-12">
+                                <!-- <div class="col-md-12">
                                     <div class="mb-3 position-relative">
                                         <label for="formFile" class="form-label">添付ファイルはこちら :</label>
-                                        <input class="form-control" type="file" id="formFile">
+                                        <input name="attachFile" class="form-control" type="file" id="attachFileId">
                                     </div>
-                                </div>
+                                </div> -->
                                 <!--end col-->
                             </div>
                             <!--end row-->
@@ -472,7 +474,8 @@
     <!-- Feather icon -->
     <script src="js/feather.min.js"></script>
     <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
-
+        <!-- Contact icon -->
+        <script src="js/contact.js"></script>
     <!-- Main Js -->
     <script src="js/app.js"></script>
 </body>
