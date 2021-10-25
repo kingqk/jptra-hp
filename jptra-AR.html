@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jp-tra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Multipurpose Creative Landing Page Template" />
+    <meta name="keywords" content="Bootstrap 5, SASS, Clean, Multipurpose, Responsive, Modern" />
+    <meta content="Shreethemes" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <!-- Tobii -->
+    <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+    <!-- Swiper -->
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Main Css -->
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+
+    <!-- TAGLINE START-->
+    <div class="tagline">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <ul class="list-unstyled mb-0 px-0 tag-social">
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="facebook" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="instagram" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="twitter" class="fea icon-sm"></i></a></li>
+                        </ul>
+
+                        <ul class="list-unstyled mb-0 px-0 tag-right">
+                            <li class="list-inline-item me-2">
+                                <div class="mb-0">
+                                    <select class="form-select form-select-sm select-lang">
+
+                                        <option value="1">日本語</option>
+                                        <option value="2">中文</option>
+                                        <option value="3">English</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                        data-feather="settings" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" data-bs-toggle="modal"
+                                    data-bs-target="#LoginForm" class="text-dark"><i data-feather="user"
+                                        class="fea icon-sm"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </div>
+    <!--end tagline-->
+    <!-- TAGLINE END-->
+
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky taglines">
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a class="logo" href="index.html">
+                    <img src="images/logo-dark.png" height="21" alt="">
+                </a>
+            </div>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index.html" class="sub-menu-item">Top</a></li>
+                    <li><a href="jptra-business.html"class="sub-menu-item">企業サービス</a></li>
+                    <li><a href="jptra-themehall.html" class="sub-menu-item">テーマホール事業</a></li>
+                    <li><a href="jptra-AR.html" class="sub-menu-item">メタバース（AR）事業</a></li>
+                    <li><a href="jptra-company.html" class="sub-menu-item">企業情報</a></li>
+                    <li><a href="jptra-contact.html" class="sub-menu-item">お問い合わせ</a></li>
+                </ul>
+                <!--end navigation menu-->
+
+                <ul class="list-unstyled small-tagline d-none mb-0">
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="settings" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#LoginForm" class="text-dark"><i data-feather="user"
+                                class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2">
+                        <div class="mb-0">
+                            <select class="form-select form-select-sm select-lang">
+                                <option value="1">日本語</option>
+                                <option value="2">中文</option>
+                                <option value="3">English</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="facebook" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item me-2"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="instagram" class="fea icon-sm"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="text-dark"><i
+                                data-feather="twitter" class="fea icon-sm"></i></a></li>
+                </ul>
+                <!--end login button-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="bg-half d-table w-100" style="background: url('images/coworking/bg031.jpg') center center;">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="title-heading text-center">
+                        <h3 class="font-weight-normal text-white mb-4">メタバース（AR）事業</h3>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Hero End -->
+
+
+    <section class="section">
+        <div class="container">
+            <div class="mb-60">
+                <div class="pt-1">
+                    <h4 class="title text-center mb-5">私たちが考えたメタバースとは</h4>
+                    <div class="section-title text-left mb-4 pb-2">
+                        <p class="text-muted mb-6">
+                            オンラインに構築された仮想空間のことで、ゲームやバーチャルイベント、バーチャル観光などのイメージしかない方が多いかもしれませんが、実はメタバースインターネットはインターネット、モバイルインターネットの次に来る第三世代インターネットとも言えます。従来はB2Cのエンターテインメントに運用することが多いですが、弊社は下記のようなB2B企業向けのサービスに運用することを目指します。</p>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+
+        <div class="container">
+            <div class="row align-items-center mb-60">
+                <div class="col-lg-6 col-md-6 col-12 pt-2 ">
+                    <h4 class="title mb-3">商品販売（テスト運用中）</h4>
+                    <div class="section-title text-left mb-4 pb-2">
+                        <p class="text-muted para-desc mx-auto mb-0">
+                            家具量販店に行くとモデルルームのような空間があります。特に郊外型店舗にはさまざまな種類、さまざまな色違い商品がありますが、都市中心部やスペースが限られている店舗にはたくさんの商品が置けない場合が多いです。また、モデルルームのような空間を造れば、商品の雰囲気や使い道などがもっと分かりやすくなり、売上と直接繋がることも数多くの企業に証明されています。
+                        <br>弊社のAR技術は商品に合う雰囲気作りで、商品への深い体験もでき、さらに店舗の改装工事も必要なく、商品の変更や期間限定商品の展示販売も圧倒的な速さで変更が可能です。（例：アウトドア商品には山・キャンプ場の演出、夏の商品には海の演出など）
+                        <br>また、一つの空間でも、色違い商品を全部展示（仕入）する必要がなく、AR裸眼3D投影技術を導入するだけで、全色商品をお客様の希望により随時に演出できます。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="position-relative">
+                        <img src="video/AR02-0001.jpg" class="rounded img-fluid shadow mx-auto d-block" alt="">
+                        <div class="play-icon">
+                            <a href="video/AR02.mp4" class="play-btn video-play-icon">
+                                <i class="mdi mdi-play mdi-24px text-primary rounded-pill bg-primary shadow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+    
+            </div>
+            <!--end row-->
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center mb-60">
+                <div class="col-lg-6 col-md-6 col-12 pt-2 ">
+                    <h4 class="title mb-3">オンラインショッピングモール（開発中）</h4>
+                    <div class="section-title text-left mb-4 pb-2">
+                        <p class="text-muted para-desc mx-auto mb-0">
+                            現在のインターネットショッピングは多くの利用者に利用されています。商品の写真・動画や口コミなどたくさんの情報が充実していますが、実店舗のような実際に商品の体験ができないことは欠点の一つです。特に体験してみないと良さが分からない商品はたくさん存在しています。
+                            <br>メタバースオンラインショッピングモールでは、実際のショッピングモールを再現し、利用者は自身のアバターを操作して、仮想空間内の全ての店舗と商品を360度体験ができます。また、商品を仮想空間内で購入し、後日購入者の自宅に配送することも可能です。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="position-relative">
+                        <img src="video/AR01-0001.jpg" class="rounded img-fluid shadow mx-auto d-block" alt="">
+                        <div class="play-icon">
+                            <a href="video/AR01.mp4" class="play-btn video-play-icon">
+                                <i class="mdi mdi-play mdi-24px text-primary rounded-pill bg-primary shadow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+    
+            </div>
+            <!--end row-->
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center mb-60">
+                <div class="col-lg-6 col-md-6 col-12 pt-2 ">
+                    <h4 class="title mb-3">国際ビジネスマッチング（開発中）</h4>
+                    <div class="section-title text-left mb-4 pb-2">
+                        <p class="text-muted para-desc mx-auto mb-0">
+                            日本の自社事務所にいながら、海外の展示会やビジネス商談会に参加でき、さらに海外企業の会社や工場の雰囲気・資格などを仮想空間で視察（企業検査）することもできます。また、仮想会議室を利用すれば、現在のWeb会議と違い、まるで会議室にいるような臨場感で、身振り手振りや位置関係、目線なども全て把握でき、会話の内容とタイミングが分かりやすくなります。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 mb-5">
+                    <div class="position-relative">
+                        <img src="video/AR03-0001.png" class="rounded img-fluid shadow mx-auto d-block" alt="">
+                        <div class="play-icon">
+                            <a href="video/AR03.mp4" class="play-btn video-play-icon">
+                                <i class="mdi mdi-play mdi-24px text-primary rounded-pill bg-primary shadow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+    
+            </div>
+            <!--end row-->
+        </div>
+
+
+
+        <!--end container-->
+    </section>
+    <!--end section-->
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2"><br>
+                    <a class="logo-footer" href="#">
+                        <img src="images/logo-light.png" height="21" alt="">
+                    </a>
+                    <p class="mt-4">私たちはグローバル戦略コンサルティング専門会社として、
+                        世界へチャレンジしたい企業さまへ宣伝販売方式、グローバル戦略などへ提案しております。</p>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0"><br>
+                    <h5 class="text-light footer-head font-weight-normal">メニュー</h5>
+                    <ul class="list-unstyled footer-list px-0 mt-4">
+                        <li><a href="index.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                Top</a></li>
+                        <li><a href="jptra-business.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                企業サービス</a></li>
+                        <li><a href="jptra-themehall.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                テーマホール事業</a></li>
+                        <li><a href="jptra-AR.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                メタバース（AR）事業</a></li>
+                        <li><a href="jptra-company.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                企業情報</a></li>
+                        <li><a href="jptra-contact.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i>
+                                お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 "><br>
+                    <h5 class="text-light footer-head font-weight-normal">アクセス</h5>
+                    <ul class="list-unstyled footer-list px-0 mt-4">
+                        <li><i data-feather="map-pin" class="fea icon-sm me-2"></i><a href="#"
+                                class="text-foot">〒101-0032　東京都千代田区岩本町2丁目1番3号</a></li>
+                        <li><i data-feather="mail" class="fea icon-sm me-2"></i><a href="test@email.com"
+                                class="text-foot">test@email.com</a></li>
+                        <li><i data-feather="phone" class="fea icon-sm me-2"></i><a href="tel:+152534-468-854"
+                                class="text-foot">+(81) 03-123-4567</a></li>
+                    </ul>
+                    <br><br>
+                    <a href="" class="text-foot">
+                        個人情報保護方針</a>
+                    <br>
+                    <a href="" class="text-foot">
+                        個人情報の取扱いについて</a>
+
+                </div>
+                <!--end col-->
+
+
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">Copyright ©
+                            <script>document.write(new Date().getFullYear())</script> <i
+                                class="mdi mdi-heart text-danger"></i> <a class="text-reset">株式会社ジャトラコンサルティング</a>
+                        </p>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <ul class="list-unstyled text-sm-end social-icon social mb-0">
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                    </ul>
+                    <!--end icon-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Modal Content Start -->
+    <div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded shadow border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Login </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" name="email" required=""
+                                        placeholder="Your Email :">
+                                </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Password <span class="text-danger">*</span></label>
+                                    <input type="password" class="form-control" required="" placeholder="Password :">
+                                </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between">
+                                    <div class="mb-3 d-inline-block">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <p class="forgot-pass mb-0"><a href="page-reset-password.html"
+                                            class="text-dark fw-bold">Forgot password ?</a></p>
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-12 mb-0">
+                                <button class="btn btn-primary w-100">Sign in</button>
+                            </div>
+                            <!--end col-->
+                            <div class="col-12 mt-4 text-center">
+                                <h6 class="mb-0">Or Login With</h6>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-sm-6 mt-4">
+                                        <a href="#" class="btn w-100 btn-light bg-facebook"><i
+                                                class="mdi mdi-facebook"></i> Facebook</a>
+                                    </div>
+                                    <div class="col-sm-6 mt-4">
+                                        <a href="#" class="btn w-100 btn-light"><i class="mdi mdi-google"></i>
+                                            Google</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a
+                                        href="page-signup.html" class="text-dark fw-bold">Sign Up</a></p>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                    </form>
+                    <!--end form-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Content End -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"></i>
+    </a>
+    <!-- Back to top -->
+
+
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Shuffle Popup -->
+    <script src="js/shuffle.min.js"></script>
+    <script src="js/tobii.min.js"></script>
+    <script src="js/gallery.init.js"></script>
+    <!-- Typed -->
+    <script src="js/typed.js"></script>
+    <script src="js/typed.init.js"></script>
+    <!-- SLIDER -->
+    <script src="js/tiny-slider.js "></script>
+    <script src="js/tiny-slider-init.js "></script>
+
+    <!-- Parallax -->
+    <script src="js/parallax.js"></script>
+    <!-- Feather icon -->
+    <script src="js/feather.min.js"></script>
+    <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
+
+    <!-- Main Js -->
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
