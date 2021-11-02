@@ -2175,40 +2175,6 @@ p {
   }
 }
 
-.tagline {
-  position: absolute;
-  width: 100%;
-  z-index: 99;
-  background: #f4f4ff;
-  font-size: 14px;
-  padding: 11px 0;
-}
-
-.tagline .tag-social,
-.tagline .tag-right {
-  line-height: 32px;
-}
-
-.tagline .tag-social a,
-.tagline .tag-right a {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.tagline .tag-social a:hover,
-.tagline .tag-right a:hover {
-  color: #37d9c4 !important;
-}
-
-.tagline li {
-  margin-bottom: 0 !important;
-}
-
-.tagline .tag-right .form-group .form-control,
-.small-tagline .form-group .form-control {
-  height: 36px;
-  padding: .375rem 1.75rem .375rem .75rem;
-}
 
 #topnav {
   position: fixed;
