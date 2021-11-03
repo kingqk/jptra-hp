@@ -61,15 +61,15 @@ function validateForm() {
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("simple-msg").innerHTML = this.responseText;
-      // document.forms["myForm"]["subject"].value = "";
-      // document.forms["myForm"]["companyNm"].value = "";
-      // document.forms["myForm"]["companyKanaNm"].value = "";
-      // document.forms["myForm"]["address"].value = "";
-      // document.forms["myForm"]["telno"].value = "";
-      // document.forms["myForm"]["email"].value = "";
-      // document.forms["myForm"]["contactor"].value = "";
-      // document.forms["myForm"]["hpLink"].value = "";
-      // document.forms["myForm"]["message"].message = "";
+      document.forms["myForm"]["subject"].value = "";
+      document.forms["myForm"]["companyNm"].value = "";
+      document.forms["myForm"]["companyKanaNm"].value = "";
+      document.forms["myForm"]["address"].value = "";
+      document.forms["myForm"]["telno"].value = "";
+      document.forms["myForm"]["email"].value = "";
+      document.forms["myForm"]["contactor"].value = "";
+      document.forms["myForm"]["hpLink"].value = "";
+      document.forms["myForm"]["message"].message = "";
     }
   };
   xhttp.open("POST", "php/contact.php", true);

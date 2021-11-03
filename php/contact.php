@@ -96,15 +96,15 @@ try {
 	// SMTPサーバの設定
 	$mail->isSMTP();                          // SMTPの使用宣言
 	// $mail->Host       = 'smtp.gmail.com';   // SMTPサーバーを指定
-	$mail->Host       = 'localhost';   // SMTPサーバーを指定
-	// $mail->SMTPAuth   = true;                 // SMTP authenticationを有効化
-	// $mail->Username   = 'kikuchi.remi@jp-tra.co.jp';   // SMTPサーバーのユーザ名
-	// $mail->Password   = 'jp001-tra';           // SMTPサーバーのパスワード
-	// $mail->SMTPSecure = 'tls';  // 暗号化を有効（tls or ssl）無効の場合はfalse
+	$mail->Host       = 'mail5.onamae.ne.jp';   // SMTPサーバーを指定
+	$mail->SMTPAuth   = true;                 // SMTP authenticationを有効化
+	$mail->Username   = 'mail@jp-tra.co.jp';   // SMTPサーバーのユーザ名
+	$mail->Password   = 'jptra#0601';           // SMTPサーバーのパスワード
+	$mail->SMTPSecure = 'tls';  // 暗号化を有効（tls or ssl）無効の場合はfalse
 	// $mail->Port       = 587; // TCPポートを指定（tlsの場合は465や587）
-	$mail->Port       = 3025; // TCPポートを指定（tlsの場合は465や587）
+	$mail->Port       = 587; // TCPポートを指定（tlsの場合は465や587）
 	//実際の送信先を設定する
-	$send_to_mail_address = "kikuchi.remi@jp-tra.co.jp";
+	$send_to_mail_address = "sales@jp-tra.co.jp";
 
 	//(1)問い合わせ内容を送信
 	// メールタイトル
@@ -212,7 +212,7 @@ $companyNm さま
 	// 送受信先設定（第二引数は省略可）
 	$mail->setFrom($send_to_mail_address, "株式会社ジャトラコンサルティング"); // 送信者
 	$mail->addAddress($email, $companyNm);   // 宛先
-	$mail->addReplyTo($send_to_mail_address, "株式会社ジャトラコンサルティング"); // 返信先
+	$mail->addReplyTo($email, "株式会社ジャトラコンサルティング"); // 返信先
 	// $mail->addCC('cc@example.com', '受信者名'); // CC宛先
 	// $mail->Sender = 'kikuchi.remi@jp-tra.co.jp'; // Return-path
 
