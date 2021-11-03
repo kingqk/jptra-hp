@@ -127,7 +127,7 @@ try {
 ④住所　　　　　　：$address
 ⑤電話番号　　　　：$telno
 ⑥メールアドレス　：$email
-⑦メールアドレス　：$contactor
+⑦担当者　　　　　：$contactor
 ⑧ホームページもしくはネットショッピング：
 　　　　　　　　　　$hpLink
 ⑨ご要望　　　　　：
@@ -188,7 +188,7 @@ $companyNm さま
 ④住所　　　　　　：$address
 ⑤電話番号　　　　：$telno
 ⑥メールアドレス　：$email
-⑦メールアドレス　：$contactor
+⑦担当者　　　　　：$contactor
 ⑧ホームページもしくはネットショッピング：
 　　　　　　　　　　$hpLink
 ⑨ご要望　　　　　：
