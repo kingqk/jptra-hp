@@ -140,7 +140,7 @@ try {
 	// 送受信先設定（第二引数は省略可）
 	$mail->setFrom($email, $companyNm); // 送信者
 	$mail->addAddress($send_to_mail_address);   // 宛先
-	$mail->addReplyTo($email, $companyNm); // 返信先
+	// $mail->addReplyTo($email, $companyNm); // 返信先
 	// $mail->addCC('cc@example.com', '受信者名'); // CC宛先
 	// $mail->Sender = 'kikuchi.remi@jp-tra.co.jp'; // Return-path
 
@@ -212,7 +212,7 @@ $companyNm さま
 	// 送受信先設定（第二引数は省略可）
 	$mail->setFrom($send_to_mail_address, "株式会社ジャトラコンサルティング"); // 送信者
 	$mail->addAddress($email, $companyNm);   // 宛先
-	$mail->addReplyTo($email, "株式会社ジャトラコンサルティング"); // 返信先
+	// $mail->addReplyTo($email, "株式会社ジャトラコンサルティング"); // 返信先
 	// $mail->addCC('cc@example.com', '受信者名'); // CC宛先
 	// $mail->Sender = 'kikuchi.remi@jp-tra.co.jp'; // Return-path
 
