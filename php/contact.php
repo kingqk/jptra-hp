@@ -35,18 +35,18 @@ if (trim($companyNm) == '') {
 	echo '<div class="error_message">会社名を入力してください。</div>';
 	exit();
 }
-if (trim($companyKanaNm) == '') {
-	echo '<div class="error_message">フリガナを入力してください。</div>';
-	exit();
-}
-if (trim($address) == '') {
-	echo '<div class="住所を入力してください。</div>';
-	exit();
-}
-if (trim($telno) == '') {
-	echo '<div class="error_message">電話番号を入力してください。</div>';
-	exit();
-}
+// if (trim($companyKanaNm) == '') {
+// 	echo '<div class="error_message">フリガナを入力してください。</div>';
+// 	exit();
+// }
+// if (trim($address) == '') {
+// 	echo '<div class="住所を入力してください。</div>';
+// 	exit();
+// }
+// if (trim($telno) == '') {
+// 	echo '<div class="error_message">電話番号を入力してください。</div>';
+// 	exit();
+// }
 if (trim($email) == '') {
 	echo '<div class="error_message">メールアドレスを入力してください。</div>';
 	exit();
@@ -59,10 +59,10 @@ if (trim($contactor) == '') {
 	echo '<div class="error_message">担当名を入力してください。</div>';
 	exit();
 }
-if (trim($hpLink) == '') {
-	echo '<div class="error_message">ホームページもしくはネットショップリングを入力してください。</div>';
-	exit();
-}
+// if (trim($hpLink) == '') {
+// 	echo '<div class="error_message">ホームページもしくはネットショップリングを入力してください。</div>';
+// 	exit();
+// }
 if (trim($message) == '') {
 	echo '<div class="error_message">ご要望を入力してください。</div>';
 	exit();
@@ -86,7 +86,8 @@ mb_internal_encoding('UTF-8');
 $mail = new PHPMailer(true);
 
 // 文字エンコードを指定
-$mail->CharSet = 'utf-8';
+$mail->CharSet = PHPMailer::CHARSET_UTF8;
+$mail->Encoding = PHPMailer::ENCODING_BASE64;
 
 try {
 	// デバッグ設定
@@ -95,15 +96,19 @@ try {
 
 	// SMTPサーバの設定
 	$mail->isSMTP();                          // SMTPの使用宣言
+	// $mail->isMail();                          // SMTPの使用宣言
 	// $mail->Host       = 'smtp.gmail.com';   // SMTPサーバーを指定
 	$mail->Host       = 'mail5.onamae.ne.jp';   // SMTPサーバーを指定
 	$mail->SMTPAuth   = true;                 // SMTP authenticationを有効化
-	$mail->Username   = 'mail@jp-tra.co.jp';   // SMTPサーバーのユーザ名
+	$mail->Username   = 'kikuchi.remi@jp-tra.co.jp';   // SMTPサーバーのユーザ名
 	$mail->Password   = 'jptra#0601';           // SMTPサーバーのパスワード
-	$mail->SMTPSecure = 'tls';  // 暗号化を有効（tls or ssl）無効の場合はfalse
+	// $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // 暗号化を有効（tls or ssl）無効の場合はfalse
 	// $mail->Port       = 587; // TCPポートを指定（tlsの場合は465や587）
-	$mail->Port       = 587; // TCPポートを指定（tlsの場合は465や587）
+	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;  // 暗号化を有効（tls or ssl）無効の場合はfalse
+	$mail->Port       = 465; // TCPポートを指定（tlsの場合は465や587）
+
 	//実際の送信先を設定する
+//	$send_to_mail_address = "sales@jp-tra.co.jp";
 	$send_to_mail_address = "sales@jp-tra.co.jp";
 
 	//(1)問い合わせ内容を送信
@@ -152,15 +157,12 @@ try {
 	if ($mail->send()) {
 		// Email has sent successfully, echo a success page.
 
-		echo "<fieldset>";
-		echo "<div id='success_page'>";
-		echo "<h5>メール送信が成功しました。</h5>";
-		echo "<p><strong>$companyNm さま</strong>、ありがとうございました。 </p>";
-		echo "</div>";
-		echo "</fieldset>";
+		$ret_msg="<fieldset><div id='success_page'><h5>メール送信が成功しました。</h5><p><strong>$companyNm さま</strong>、ありがとうございました。 </p></div></fieldset>";
+		header('Content-type: application/json');
+		echo json_encode( ['returnCode'=>0, 'returnMsg'=>$ret_msg] ,JSON_UNESCAPED_UNICODE);
 	} else {
-
-		echo 'ERROR!';
+		header('Content-type: application/json');
+		echo json_encode( ['returnCode'=>-1, 'returnMsg'=>'ERROR!'] ,JSON_UNESCAPED_UNICODE);
 	}
 
 	//(2)自動返信処理
@@ -224,7 +226,8 @@ $companyNm さま
 	$mail->send();
 } catch (Exception $e) {
 	// エラーの場合
-	echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+	header('Content-type: application/json');
+	echo json_encode( ['returnCode'=>-1, 'returnMsg'=>"Message could not be sent. Mailer Error: {$mail->ErrorInfo}"] ,JSON_UNESCAPED_UNICODE);
 }
 
 

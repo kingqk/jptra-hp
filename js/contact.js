@@ -29,18 +29,18 @@ function validateForm() {
     showErrorMsg("会社名を入力してください。");
     return false;
   }
-  if (companyKanaNm == "" || companyKanaNm == null) {
-    showErrorMsg("フリガナを入力してください。");
-    return false;
-  }
-  if (address == "" || address == null) {
-    showErrorMsg("住所を入力してください。");
-    return false;
-  }
-  if (telno == "" || telno == null) {
-    showErrorMsg("電話番号を入力してください。");
-    return false;
-  }
+  // if (companyKanaNm == "" || companyKanaNm == null) {
+  //   showErrorMsg("フリガナを入力してください。");
+  //   return false;
+  // }
+  // if (address == "" || address == null) {
+  //   showErrorMsg("住所を入力してください。");
+  //   return false;
+  // }
+  // if (telno == "" || telno == null) {
+  //   showErrorMsg("電話番号を入力してください。");
+  //   return false;
+  // }
   if (email == "" || email == null) {
     showErrorMsg("メールアドレスを入力してください。");
     return false;
@@ -49,10 +49,10 @@ function validateForm() {
     showErrorMsg("担当名を入力してください。");
     return false;
   }
-  if (hpLink == "" || hpLink == null) {
-    showErrorMsg("ホームページもしくはネットショップリングを入力してください。");
-    return false;
-  }
+  // if (hpLink == "" || hpLink == null) {
+  //   showErrorMsg("ホームページもしくはネットショップリングを入力してください。");
+  //   return false;
+  // }
   if (message == "" || message == null) {
     showErrorMsg("ご要望を入力してください。");
     return false;
@@ -60,7 +60,9 @@ function validateForm() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("simple-msg").innerHTML = this.responseText;
+      var data = JSON.parse(this.response);
+      if(data.returnCode == 0){
+      document.getElementById("simple-msg").innerHTML = data.returnMsg;
       document.forms["myForm"]["subject"].value = "";
       document.forms["myForm"]["companyNm"].value = "";
       document.forms["myForm"]["companyKanaNm"].value = "";
@@ -70,6 +72,9 @@ function validateForm() {
       document.forms["myForm"]["contactor"].value = "";
       document.forms["myForm"]["hpLink"].value = "";
       document.forms["myForm"]["message"].message = "";
+      }else{
+        document.getElementById("simple-msg").innerHTML = data.returnMsg;      
+      }
     }
   };
   xhttp.open("POST", "php/contact.php", true);
